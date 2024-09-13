@@ -1,0 +1,56 @@
+<!DOCTYPE html><html><head><title>R: options.default</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>options.default {ARTP2}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='options.default'>
+options.default
+</h2>
+
+<h3>Description</h3>
+
+<p>A function to return default <code><a href="../../ARTP2/help/options.html">options</a></code> in <code><a href="../../ARTP2/help/sARTP.html">sARTP</a></code> and <code><a href="../../ARTP2/help/rARTP.html">rARTP</a></code>. This page is for illustration. Users do not need to call this function explicitly.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>options.default()
+</code></pre>
+
+
+<h3>Value</h3>
+
+<p>A list of <code><a href="../../ARTP2/help/options.html">options</a></code>. 
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="../../ARTP2/help/options.html">options</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>options &lt;- options.default()
+str(options)
+names(options)
+</code></pre>
+
+<hr /><div style="text-align: center;">[Package <em>ARTP2</em> version 1.2.32 <a href="00Index.html">Index</a>]</div>
+</div>
+</body></html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html><html><head><title>R: ARTP test for summary data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>sARTP {ARTP2}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='sARTP'>ARTP test for summary data</h2>
+
+<h3>Description</h3>
+
+<p>Calculate gene and pathway p-values using the ARTP test and summary data. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>sARTP(summary.files, pathway, family, reference, lambda, 
+      ncases, ncontrols, nsamples, options=NULL)
+</code></pre>
+
+
+<h3>Arguments</h3>
+
+<table>
+<tr><td><code id="sARTP_:_summary.files">summary.files</code></td>
+<td>
+
+<p>a character vector of file names containing the summary results of SNPs included in one or multiple studies. 
+Each file must be able to be read by <code><a href="../../utils/help/read.table.html">read.table</a></code>. 
+Each file must have columns called <code>SNP</code>, <code>RefAllele</code>, <code>EffectAllele</code>, <code>Beta</code>, 
+and at least one of <code>SE</code>, <code>P</code>. 
+An optional column called <code>Direction</code> describing studies information can also be included if the 
+summary results were calculated from multiple studies by inverse weighting method. 
+Two optional columns called <code>Chr</code> and <code>Pos</code> are required if <code>excluded.regions</code> is specified in <code>options</code>. 
+SNPs within <code>excluded.regions</code> are going to be excluded from the analysis. 
+If <code>options$ambig.by.AF</code> is TRUE, then a column called &quot;RAF&quot; or &quot;EAF&quot; is required.
+See <code>Details</code>.
+</p>
+</td></tr>
+<tr><td><code id="sARTP_:_pathway">pathway</code></td>
+<td>
+
+<p>a character of the name of file containing definition of a pathway. 
+It must be able to be read by <code><a href="../../utils/help/read.table.html">read.table</a></code> and have columns called <code>SNP</code>, <code>Gene</code>, and <code>Chr</code>. 
+It can also be a data frame with the three columns. 
+The <code>SNP</code> column can also have values of the form <code>loc1-loc2</code>, where <code>loc1</code> and <code>loc2</code> are
+base-pair locations denoting a region of SNPs to use.
+</p>
+</td></tr>
+<tr><td><code id="sARTP_:_family">family</code></td>
+<td>
+
+<p>a character taking values of <code>'gaussian'</code> or <code>'binomial'</code>. 
+</p>
+</td></tr>
+<tr><td><code id="sARTP_:_reference">reference</code></td>
+<td>
+
+<p>a data.frame containing the paths of binary PLINK files of reference dataset. 
+It must have columns called <code>bed</code>, <code>bim</code> and <code>fam</code>. 
+The current version allows users to specify multiple sets of bed/bim/fam PLINK files as separate rows of the data frame. 
+</p>
+</td></tr>
+<tr><td><code id="sARTP_:_lambda">lambda</code></td>
+<td>
+
+<p>a numeric vector of inflation factors. Each file in <code>summary.files</code> should have one inflation factor specified in <code>lambda</code>. 
+</p>
+</td></tr>
+<tr><td><code id="sARTP_:_ncases">ncases</code></td>
+<td>
+
+<p>a list of numeric vectors specifying sample sizes of cases of participating studies. This argument should be specified only if <code>family == 'binomial'</code>, otherwise <code>list()</code>. See <code>Examples</code>. 
+</p>
+</td></tr>
+<tr><td><code id="sARTP_:_ncontrols">ncontrols</code></td>
+<td>
+
+<p>a list of numeric vectors specifying sample sizes of controls of participating studies. This argument should be specified only if <code>family == 'binomial'</code>, otherwise <code>list()</code>. See <code>Examples</code>. 
+</p>
+</td></tr>
+<tr><td><code id="sARTP_:_nsamples">nsamples</code></td>
+<td>
+
+<p>a list of numeric vectors specifying total sample sizes of participating studies. This argument should be specified only if <code>family == 'gaussian'</code>, otherwise <code>list()</code>. See <code>Examples</code>. 
+</p>
+</td></tr>
+<tr><td><code id="sARTP_:_options">options</code></td>
+<td>
+
+<p>a list of options to control the test procedure. If <code>NULL</code>, default options will be used. See <code><a href="../../ARTP2/help/options.html">options</a></code>.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function computes gene and pathway p-values when only summary data is available. 
+Only the ARTP test modified from Yu et al. (2009) is well tested and is released with this package. 
+ARTP is the Adaptive Rank Truncated Product test.
+</p>
+<p>Each file in <code>summary.files</code> must contain
+</p>
+
+<ul>
+<li><p><code>SNP</code>  SNP name
+</p>
+</li>
+<li><p><code>RefAllele</code>  reference allele. Can be different in studies
+</p>
+</li>
+<li><p><code>EffectAllele</code>  effect allele. Can be different in studies
+</p>
+</li>
+<li><p><code>Beta</code>  estimated effect in linear regression model or log odds ratio in logistic regression model
+</p>
+</li></ul>
+
+<p>and must contain one of the optional columns
+</p>
+
+<ul>
+<li><p><code>SE</code>  estimated standard error of Beta
+</p>
+</li>
+<li><p><code>P</code>  p-value of Wald's, LRT or score test for testing <code>H_0: Beta = 0</code>. Can be generated by <code><a href="../../stats/help/lm.html">lm</a></code>, <code><a href="../../stats/help/glm.html">glm</a></code>, <code><a href="../../stats/help/anova.html">anova</a></code> in <code>R</code> or other standard statistical softwares.
+</p>
+</li></ul>
+
+<p>An optional column <code>Direction</code> is encouraged to be provided by the user
+</p>
+
+<ul>
+<li><p><code>Direction</code> a character vector indicating which studies include a SNP. Any symbol except for '?' means a SNP is included in that study. Please note that the real direction of a SNP in studies ('+' or '-') does not matter, e.g., '++-?+' and '**+?-' provide exact the same information. See <code>Examples</code>. 
+</p>
+</li></ul>
+
+<p>Another two optional columns <code>Chr</code> and <code>Pos</code> are needed if <code>excluded.regions</code> is specified in <code>options</code>. <code>ARTP2</code> will convert the column names to be upper case, so for example, either <code>Beta</code> or <code>BETA</code> or <code>beta</code> are accepted. See <code>Examples</code>. 
+</p>
+
+<ul>
+<li><p><code>Chr</code> chromosome. 
+</p>
+</li>
+<li><p><code>Pos</code> base-pair position (bp units). 
+</p>
+</li></ul>
+
+<p>If the option <code>ambig.by.AF</code> is set to 1, then the summary files must contain at least one of:
+</p>
+
+<ul>
+<li><p><code>RAF</code> reference allele frequency.
+</p>
+</li>
+<li><p><code>EAF</code> effect allele frequency.
+</p>
+</li></ul>
+
+<p>The order of columns in files <code>summary.files</code>, <code>pathway</code> or in data frame <code>reference</code> are arbitrary, 
+and all unnecessary columns (if any) are discarded in the analysis. <br /> 
+</p>
+
+
+<h3>Value</h3>
+
+<p><code>sARTP</code> returns an object of class <code>ARTP2</code>. It is a list containing the following components: 
+</p>
+<table>
+<tr><td><code>pathway.pvalue</code></td>
+<td>
+<p>final pathway p-value accounting for multiple comparisons.</p>
+</td></tr>
+<tr><td><code>gene.pvalue</code></td>
+<td>
+<p>a data frame containing gene name, number of SNPs in the gene that were included in the analysis, chromosome name, and the p-value for the gene accounting for multiple comparisons.</p>
+</td></tr>
+<tr><td><code>pathway</code></td>
+<td>
+<p>a data frame defining the pathway that was actually tested after various filters applied. </p>
+</td></tr>
+<tr><td><code>model</code></td>
+<td>
+<p>a list containing detailed information of selected SNPs in each gene. </p>
+</td></tr>
+<tr><td><code>most.sig.genes</code></td>
+<td>
+<p>a character vector of genes selected by <code>ARTP2</code>. They are the most promising candidates, although their statistical significance is not guaranteed. </p>
+</td></tr>
+<tr><td><code>deleted.snps</code></td>
+<td>
+<p>a data frame containing SNPs excluded from the analysis and their reasons.</p>
+</td></tr>
+<tr><td><code>deleted.genes</code></td>
+<td>
+<p>a data frame containing genes excluded from the analysis because they are subsets of other remaining genes. Set <code>options$rm.gene.subset</code> to be <code>FALSE</code> to include all genes even if they are subsets of other genes. </p>
+</td></tr>
+<tr><td><code>options</code></td>
+<td>
+<p>a list of options used in the analysis. See <code><a href="../../ARTP2/help/options.html">options</a></code></p>
+</td></tr>
+<tr><td><code>pathway.nperm</code></td>
+<td>
+<p>The number of permutations for computing the pathway p-value. This takes
+into account the option <code>expand.fold</code>.</p>
+</td></tr>
+<tr><td><code>accurate</code></td>
+<td>
+<p><code>TRUE</code> if <code>options$nperm</code> is large enougth to accurately estimate p-values,
+i.e., if the criteria <br /> 
+<code>(sqrt(pvalue*(1-pvalue)/pathway.nperm)/pvalue &lt; 0.1) &amp;&amp; </code> <br />
+<code>(ceiling(-log10(minimum gene pvalue)) &lt; log10(nperm))</code> <br />
+is satisfied.
+</p>
+</td></tr>
+<tr><td><code>setup</code></td>
+<td>
+<p>a list containing necessary input for <code><a href="../../ARTP2/help/warm.start.html">warm.start</a></code>. It can be written to a file by using the function <code><a href="../../base/help/save.html">save</a></code>, then its path can be the input of <code><a href="../../ARTP2/help/warm.start.html">warm.start</a></code>. Loading from <code>reference</code>, it also contains a data frame of genotypes of used SNPs (<code>setup$ref.geno</code>), if <code>options$keep.geno</code> is <code>TRUE</code>. </p>
+</td></tr>
+</table>
+
+
+<h3>References</h3>
+
+<p>Zhang H, Wheeler W, Hyland LP, Yang Y, Shi J, Chatterjee N, Yu K. (2016) A powerful procedure for pathway-based meta-analysis using summary statistics identifies 43 pathways associated with type II diabetes in European populations. PLoS Genetics 12(6): e1006122
+</p>
+<p>Yu K, Li Q, Bergen AW, Pfeiffer RM, Rosenberg PS, Caporaso N, Kraft P, Chatterjee N. (2009) Pathway analysis by adaptive combination of P-values. Genet Epidemiol 33(8): 700 - 709
+</p>
+<p>Zhang H, Shi J, Liang F, Wheeler W, Stolzenberg-Solomon R, Yu K.  (2014) A fast multilocus test with adaptive SNP selection for large-scale genetic association studies. European Journal of Human Genetics 22: 696 - 702
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="../../ARTP2/help/options.html">options</a></code>, <code><a href="../../ARTP2/help/warm.start.html">warm.start</a></code>, <code><a href="../../ARTP2/help/rARTP.html">rARTP</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ARTP2)
+
+## Path of files containing summary statistics
+## Only required columns will be loaded
+study1 &lt;- system.file("extdata", package = "ARTP2", "study1.txt.gz")
+study2 &lt;- system.file("extdata", package = "ARTP2", "study2.txt.gz")
+
+## Path of a build-in file containing pathway definition
+pathway &lt;- system.file("extdata", package = "ARTP2", "pathway.txt.gz")
+
+## Create data frame containing paths of build-in PLINK files that are going to used as reference
+## As an example, use all chromosomes
+chr &lt;- 1:22
+nchr &lt;- length(chr)
+
+fam &lt;- vector("character", nchr)
+bim &lt;- vector("character", nchr)
+bed &lt;- vector("character", nchr)
+
+for(i in 1:nchr){
+  fam[i] &lt;- system.file("extdata", package = "ARTP2", paste("chr", chr[i], ".fam", sep = ""))
+  bim[i] &lt;- system.file("extdata", package = "ARTP2", paste("chr", chr[i], ".bim", sep = ""))
+  bed[i] &lt;- system.file("extdata", package = "ARTP2", paste("chr", chr[i], ".bed", sep = ""))
+}
+
+reference &lt;- data.frame(fam, bim, bed, stringsAsFactors = FALSE)
+
+## Set the options. 
+## Accumulate signal from the top 2 SNPs in each gene
+## 1e5 replicates of resampling to estimate the p-value
+options &lt;- list(inspect.snp.n = 2, nperm = 1e4, 
+                maf = .01, HWE.p = 1e-6, 
+                gene.R2 = .9, 
+                id.str = "unique-pathway-id", 
+                out.dir = getwd(), save.setup = FALSE)
+                
+## different inflation factors are adjusted in two studies
+lambda &lt;- c(1.10, 1.08)
+
+## two summary files, so there are two elements in each of two lists ncases and ncontrols
+## the first summary file includes data calculated from meta-analysis of two sub-studies, 
+## each with sample size 63390 (9580 cases and 53810 controls) and 5643 (2591 cases and 
+## 3052 controls)
+## see a few rows in study1
+# s &lt;- read.table(study1, header = TRUE, as.is = TRUE, nrows = 10)
+# s$Direction
+## [1] "+?" "+?" "++" "+?" "+?" "+?" "+?" "+?" "+?" "++"
+## sub-study1 has 9580 cases, and sub-study2 has 2591 cases
+## sub-study1 has 53810 cases, and sub-study2 has 3052 cases
+## '?' means a SNP is not included in that sub-study
+## any other symbols means a SNP is included in that sub-study
+ncases &lt;- list()
+ncontrols &lt;- list()
+ncases[[1]] &lt;- c(9580, 2591)
+ncontrols[[1]] &lt;- c(53810, 3052)
+
+## the second summary file includes data calculated from one sub-studies with sample size 
+## 61957 (7638 cases and 54319 controls)
+ncases[[2]] &lt;- 7638
+ncontrols[[2]] &lt;- 54319
+
+# logistic regression is used in base model, thus ncases and ncontrols should be specified. 
+family &lt;- 'binomial'
+
+## pathway test with two study files
+# ret &lt;- sARTP(summary.files = c(study1, study2), pathway, family, reference, lambda, 
+#              ncases, ncontrols, options = options)
+
+# ret$pathway.pvalue
+## [1] 0.04594541  # Mac OS
+## [1] 0.05149485  # Linux with 1 thread
+## [1] 0.03969603  # Linux with 32 threads
+
+## Mac OS
+# head(ret$gene.pvalue)
+##       Gene Chr N.SNP      Pvalue
+## 1     BDH2   4    10 0.000749925
+## 2   UBE2D3   4     6 0.001849815
+## 3     PBX2   6    22 0.003849615
+## 4 PPP1R14D  15     9 0.003849615
+## 5   MRPL10  17    18 0.011448855
+## 6    SCYL1  11     3 0.019848015
+
+## Linux with 1 thread
+# head(ret$gene.pvalue)
+##       Gene Chr N.SNP      Pvalue
+## 1     BDH2   4    10 0.000949905
+## 2   UBE2D3   4     6 0.001699830
+## 3 PPP1R14D  15     9 0.003949605
+## 4     PBX2   6    22 0.004299570
+## 5   MRPL10  17    18 0.012448755
+## 6    SCYL1  11     3 0.017148285
+
+## Linux with 32 threads
+# head(ret$gene.pvalue)
+##       Gene Chr N.SNP      Pvalue
+## 1   UBE2D3   4     6 0.000849915
+## 2     BDH2   4    10 0.001049895
+## 3 PPP1R14D  15     9 0.003949605
+## 4     PBX2   6    22 0.004899510
+## 5   MRPL10  17    18 0.012798720
+## 6    SCYL1  11     3 0.015048495
+
+## pathway test with each of two studies
+# ret1 &lt;- sARTP(summary.files = study1, pathway, family, reference, lambda[1], 
+#               ncases[1], ncontrols[1], options = options)
+
+# ret2 &lt;- sARTP(summary.files = study2, pathway, family, reference, lambda[2], 
+#               ncases[2], ncontrols[2], options = options)
+
+# ret1$pathway.pvalue
+## [1] 0.04279572  # Mac OS
+## [1] 0.03519648  # Linux with 1 thread
+## [1] 0.04644536  # Linux with 32 threads
+
+# ret2$pathway.pvalue
+## [1] 0.3092691  # Mac OS
+## [1] 0.2870213  # Linux with 1 thread
+## [1] 0.3010699  # Linux with 32 threads
+
+##################################################
+## The reference is passed as an individual-level genotype data frame
+
+data(ref.geno)
+# ret.ref &lt;- sARTP(summary.files = c(study1, study2), pathway, family, ref.geno, lambda, 
+#                  ncases, ncontrols, options = options)
+
+# ret.ref$pathway.pvalue == ret$pathway.pvalue
+
+##################################################
+## The reference genotype data can also be merged into a single set of PLINK files
+
+bed &lt;- system.file("extdata", package = "ARTP2", "ref.bed")
+bim &lt;- system.file("extdata", package = "ARTP2", "ref.bim")
+fam &lt;- system.file("extdata", package = "ARTP2", "ref.fam")
+
+reference &lt;- data.frame(fam, bim, bed)
+# ret.comb &lt;- sARTP(summary.files = c(study1, study2), pathway, family, reference, lambda, 
+#                   ncases, ncontrols, options = options)
+# ret.comb$pathway.pvalue == ret$pathway.pvalue
+
+################
+
+## exclude some regions
+exc.reg1 &lt;- data.frame(Chr = c(1, 1, 22), 
+                       Pos = c(1706160, 11979231, 51052379), 
+                       Radius = c(5000, 0, 2000))
+options$excluded.regions &lt;- exc.reg1
+
+# ret.exc1 &lt;- sARTP(summary.files = c(study1, study2), pathway, family, reference, lambda, 
+#                   ncases, ncontrols, options = options)
+
+# ret.exc1$pathway.pvalue
+## [1] 0.04619538 # Mac OS
+## [1] 0.0510449  # Linux with 1 thread
+## [1] 0.04054595 # Linux with 32 threads
+
+# sum(ret.exc1$deleted.snps$reason == 'RM_BY_REGIONS')
+
+## or equivalently
+exc.reg2 &lt;- data.frame(Chr = c(1, 1, 22), 
+                       Start = c(1701160, 11979231, 51050379), 
+                       End = c(1711160, 11979231, 51054379))
+options$excluded.regions &lt;- exc.reg2
+
+# ret.exc2 &lt;- sARTP(summary.files = c(study1, study2), pathway, family, reference, lambda, 
+#                   ncases, ncontrols, options = options)
+# ret.exc1$pathway.pvalue == ret.exc2$pathway.pvalue
+
+#################
+
+## select a subset of subjects in plink files as the reference
+## options$selected.subs should be in the same format as the first column of fam file
+## load character vector subj.id of 400 subjects from build-in dataset
+data(subj.id, package = "ARTP2")
+head(subj.id)
+options$selected.subs &lt;- subj.id
+options$excluded.regions &lt;- NULL
+
+# ret.sel &lt;- sARTP(summary.files = c(study1, study2), pathway, family, reference, lambda, 
+#                  ncases, ncontrols, options = options)
+# ret.sel$pathway.pvalue
+## [1] 0.03469653 # Mac OS
+## [1] 0.05284472 # Linux with 1 thread
+## [1] 0.04164584 # Linux with 32 threads
+
+</code></pre>
+
+<hr /><div style="text-align: center;">[Package <em>ARTP2</em> version 1.2.32 <a href="00Index.html">Index</a>]</div>
+</div>
+</body></html>

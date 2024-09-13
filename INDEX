@@ -1,0 +1,38 @@
+ARTP2-package           Pathway and Gene-Level Association Test
+data                    A dataset used in example of 'rARTP'.
+exclude.snps            Excluding SNPs from specified regions
+geno                    A vector of file names used in example of
+                        'rARTP'.
+inflation               Computing the genomic control inflation factor
+                        from a given numeric vector
+meta                    Single-marker meta-analysis
+options                 options
+options.default         options.default
+pathway                 A data frame used in example of 'rARTP'.
+rARTP                   ARTP test for raw data
+read.bed                Reading data from binary PLINK files
+ref.does                Example reference genotype data coded as
+                        expected dosages.
+ref.geno                A dataset used in example of 'sARTP'.
+sARTP                   ARTP test for summary data
+sARTP.multiPop.SNP      ARTP test for multiple independent populations
+sARTP.multiPop.SNP.Gene
+                        ARTP test for multiple independent populations
+sARTP.multiPop.SNP.union
+                        ARTP test for multiple independent populations
+sARTP.multiPop.SNP.union_intersect
+                        ARTP test for multiple independent populations
+subj.id                 A vector of subject IDs used in example of
+                        'sARTP'.
+warm.start              Performing ARTP2 test with warm start
+warm.start.multiPop.SNP
+                        Performing ARTP2 test with warm start for
+                        multiple independent populations
+warm.start.multiPop.SNP.union
+                        Performing ARTP2 test with warm start for
+                        multiple independent populations
+warm.start.multiPop.SNP.union_intersect
+                        Performing ARTP2 test with warm start for
+                        multiple independent populations
+warm.start.multiPop.gene
+                        ARTP2 for multiple independent populations

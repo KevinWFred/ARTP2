@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><title>R: Single-marker meta-analysis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>meta {ARTP2}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='meta'>
+Single-marker meta-analysis
+</h2>
+
+<h3>Description</h3>
+
+<p>Perform the single-marker meta-analysis with inflation adjustment. The inverse-variance weighting approach is used. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>  meta(summary.files, lambda = NULL, sel.snps = NULL, only.meta=TRUE, ambig.by.AF=FALSE)
+</code></pre>
+
+
+<h3>Arguments</h3>
+
+<table>
+<tr><td><code id="meta_:_summary.files">summary.files</code></td>
+<td>
+
+<p>a character vector of file names containing the summary results of SNPs included in one or multiple studies. Each file must be able to be read by <code><a href="../../utils/help/read.table.html">read.table</a></code>. Each file must have columns called &quot;SNP&quot;, &quot;RefAllele&quot;, &quot;EffectAllele&quot;, &quot;BETA&quot;, and at least one of &quot;SE&quot;, &quot;P&quot;.
+</p>
+</td></tr>
+<tr><td><code id="meta_:_lambda">lambda</code></td>
+<td>
+
+<p>a numeric vector of inflation factors. Each file in <code>summary.files</code> should have one inflation factor specified in <code>lambda</code>. <code>NULL</code> if inflation is not adjusted. 
+</p>
+</td></tr>
+<tr><td><code id="meta_:_sel.snps">sel.snps</code></td>
+<td>
+
+<p>a character vector of SNPs to be used in meta-analysis. The default is <code>NULL</code>, i.e., all SNPs are used. 
+</p>
+</td></tr>
+<tr><td><code id="meta_:_only.meta">only.meta</code></td>
+<td>
+
+<p><code>TRUE</code> if do not returned individual summary data. The default is TRUE. 
+</p>
+</td></tr>  
+<tr><td><code id="meta_:_ambig.by.AF">ambig.by.AF</code></td>
+<td>
+<p>TRUE or FALSE to align SNPs with ambiguous alleles by allele frequency
+(see <code><a href="../../ARTP2/help/options.html">options</a></code>). The default is FALSE. 
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>The inverse-variance method is used by assuming a fixed effect model. The standard error is rescaled by <code>sqrt{lambda}</code>. 
+</p>
+
+
+<h3>Value</h3>
+
+<p><code>meta</code> returns a list containing 
+</p>
+<table>
+<tr><td><code>meta.stat</code></td>
+<td>
+<p>a data frame of summary statistics from meta-analysis. The summary statistics of individual studies specified in <code>summary.files</code> are also returned in the data frame if <code>only.meta</code> is <code>FALSE</code>. The standard error of individual studies are rescaled by <code>sqrt{lambda}</code>. </p>
+</td></tr>
+<tr><td><code>conf.snps</code></td>
+<td>
+<p>a character vector of SNPs with conflictive allele information. </p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+study1 &lt;- system.file("extdata", package = "ARTP2", "study1.txt.gz")
+study2 &lt;- system.file("extdata", package = "ARTP2", "study2.txt.gz")
+snps &lt;- c('rs13266821', 'rs4824130', 'rs1792438', 'rs1000047', 
+          'rs1000017', 'rs6066771', 'rs12508128')
+
+m1 &lt;- meta(summary.files = c(study1, study2), lambda = c(1.10, 1.08), 
+           sel.snps = snps)
+m2 &lt;- meta(summary.files = c(study1, study2), lambda = c(1.10, 1.08), 
+           sel.snps = snps, only.meta=FALSE)
+
+m1$conf.snps
+
+m1$meta.stat
+m2$meta.stat
+
+</code></pre>
+
+<hr /><div style="text-align: center;">[Package <em>ARTP2</em> version 1.2.32 <a href="00Index.html">Index</a>]</div>
+</div>
+</body></html>

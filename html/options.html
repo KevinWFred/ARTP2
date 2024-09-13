@@ -1,0 +1,295 @@
+<!DOCTYPE html><html><head><title>R: options</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>options {ARTP2}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='options'>options</h2>
+
+<h3>Description</h3>
+
+<p>The list to describe the options that are used in <code><a href="../../ARTP2/help/sARTP.html">sARTP</a></code>, <code><a href="../../ARTP2/help/rARTP.html">rARTP</a></code>. It will be set by function <code><a href="../../ARTP2/help/options.default.html">options.default</a></code> by default. 
+</p>
+
+
+<h3>Format</h3>
+
+<p>The format is a list. 
+</p>
+
+<dl>
+<dt><code>out.dir</code></dt><dd><p>output directory for temporary and output files. The default is the working directory <code><a href="../../base/help/getwd.html">getwd</a></code>. </p>
+</dd>
+<dt><code>id.str</code></dt><dd><p>character string that is appended to temporary file names. The default is &quot;PID&quot;. </p>
+</dd>
+<dt><code>seed</code></dt><dd><p>integer for random number generation. The default is 1. </p>
+</dd>
+</dl>
+
+<p><b>Options for testing an association: </b>
+</p>
+
+<dl>
+<dt><code>method</code></dt><dd><p>1 = AdaJoint, 2 = AdaJoint2, 3 = ARTP. The default is 3. It can also be 'AdaJoint', 'AdaJoint2', or 'ARTP'. The package will convert it into upper case, so for example, 'Adajoint' is also accepted. The ARTP method was the proposed in Yu et al. (2009) Genet Epi, while AdaJoint and AdaJoint2 methods were proposed in Zhang et al. (2014) EJHG. Note that AdaJoint2 could be more powerful if (1) two functional SNPs are negative correlated and have effects in the same direction; or (2) two functional SNPs are positively correlated and have opposite directions of their effects. </p>
+</dd>
+<dt><code>nperm</code></dt><dd><p>The number of permutations, see also <code>expand.fold</code> below. The default is 1E5. </p>
+</dd>
+<dt><code>expand.fold</code></dt><dd><p>The number of copies of the <code>nperm</code> permutations to expand.
+Setting this option to a positive integer will expand the number of
+permutations by randomly permuting the <code>nperm</code> permutations
+within each group <code>expand.fold</code> times when computing the 
+pathway p-value. The pathway p-value is then essentially computed
+using <code>(1 + expand.fold)*nperm</code> permutations. 
+The default is 0. </p>
+</dd>
+<dt><code>nthread</code></dt><dd><p>the number of threads for multi-threaded processors in Unix/Linux OS. The default is <code>detectCores()</code> to use all available processors. </p>
+</dd>
+<dt><code>use.gpd</code></dt><dd><p>TRUE or FALSE to use a generalized Pareto distribution to estimate
+the gene and pathway p-values. If <code>use.gpd TRUE</code>, then <code>nperm</code>
+should not be set to a very large value (<code>&lt; 1e5</code>).</p>
+</dd>
+<dt><code>gpd.ct.max</code></dt><dd><p>Maximum cutoff value to select the top statistics.
+Only used if <code>use.gpd = TRUE</code>. 
+The default is 250.</p>
+</dd>
+<dt><code>gpd.ct.min</code></dt><dd><p>Minimum cutoff value to select the top statistics.
+Only used if <code>use.gpd = TRUE</code>. 
+The default is 100.</p>
+</dd>
+<dt><code>gpd.step</code></dt><dd><p>Step size to select a sequence of cutoff values
+from <code>gpd.ct.max</code> to <code>gpd.ct.min</code>.
+Only used if <code>use.gpd = TRUE</code>. 
+The default is -10.</p>
+</dd>
+<dt><code>gpd.thr</code></dt><dd><p>The threshold for generalized Pareto test.
+Only used if <code>use.gpd = TRUE</code>. 
+The default is 0.05.</p>
+</dd>
+</dl>
+
+<p><b>Options for controlling data cleaning: </b>
+</p>
+
+<dl>
+<dt><code>snp.miss.rate</code></dt><dd><p>any SNP with missing rate greater than <code>snp.miss.rate</code> will be removed from the analysis. The default is 0.05. </p>
+</dd>
+<dt><code>maf</code></dt><dd><p>any SNP with minor allele frequency less than <code>maf</code> will be removed from the analysis. The default is 0.05. </p>
+</dd>
+<dt><code>HWE.p</code></dt><dd><p>any SNP with HWE exact p-value less than <code>HWE.p</code> will be removed from the analysis. The test is applied to the genotype data or reference data. The test is ignored if the imputed genotype are not encoded as 0/1/2. The default is 1E-5. </p>
+</dd>
+<dt><code>gene.R2</code></dt><dd><p>a number between 0 and 1 to filter out SNPs that are highly correlated within each gene. The <code><a href="../../stats/help/cor.html">cor</a></code> function will be called to compute the R^2 values between each pair of SNPs and remove one SNP with lower MAF in each pair with R^2 greater than <code>gene.R2</code>. The default is 0.95. </p>
+</dd>
+<dt><code>chr.R2</code></dt><dd><p>a number between 0 and 1 to filter out SNPs that are highly correlated within each chromosome. The <code><a href="../../stats/help/cor.html">cor</a></code> function will be called to compute the R^2 values between each pair of SNPs and remove one SNP with lower MAF in each pair with R^2 greater than <code>chr.R2</code>. The default is 0.95. </p>
+</dd>
+<dt><code>gene.miss.rate</code></dt><dd><p>threshold to remove genes based on their missing rate. Genes with missing rate greater than <code>gene.miss.rate</code> will be removed from the analysis. The missing rate is calculated as the number of subjects with at least one missing genotype among all SNPs in the gene divided by the total number of subjects. The default is 1.0. </p>
+</dd>
+<dt><code>rm.gene.subset</code></dt><dd><p><code>TRUE</code> to remove genes which are subsets of other genes. The default is <code>TRUE</code>. </p>
+</dd>
+<dt><code>turn.off.filters</code></dt><dd><p>a shortcut to turn off all SNP filters. If <code>TRUE</code>, it is equivalent to set <code>snp.miss.rate = 1</code>, <code>maf = 0</code>, <code>trim.huge.chr</code>, <code>gene.R2 = 1</code>, <code>chr.R2 = 1</code>, <code>huge.gene.R2 = 1</code>, <code>huge.chr.R2 = 1</code>, and <code>HWE.p = 0</code>. The default is <code>FALSE</code>. </p>
+</dd>
+<dt><code>impute</code></dt><dd><p><code>TRUE</code> to impute missing genotypes with the mean of a SNP. <code>FALSE</code> to use another way other than imputation to handle missing data when constructing the score statistics, which is considered to be more power but also more time-consuming. The default is <code>FALSE</code>. If the pathway is large and the missing rates are expected to be low, consider to set it to be <code>TRUE</code> manually for reducing computational burden. It could be beneficial in terms of power with <code>impute</code> set as <code>FALSE</code> if the missing rate is high, e.g., the data are combined from multiple studies, and a SNP has missing genotypes because it is not measured or successfully imputed in some of the participating studies. </p>
+</dd>
+<dt><code>min.marg.p</code></dt><dd><p>if a index SNP has its marginal p-value (meta-analyzed if multiple summary files are provided) &lt;= <code>min.marg.p</code>, then all SNPs within +/- <code>window</code> of the index SNP will be discarded from analysis. This is important because the gene or pathway that consists of such SNPs (e.g. p &lt; 1E-8) may have a very small gene- or pathway-level p-value even if no other region can contribute additional association, but that is not a real gene- or pathway-level association we are looking for. The default is <code>1E-7</code>. </p>
+</dd>
+<dt><code>window</code></dt><dd><p>an integer to specify window (in bp). The default is 500000 (500kb). See <code>min.marg.p</code>. </p>
+</dd>
+<dt><code>group.gap</code></dt><dd><p>an integer to regroup SNPs in a chromosome into independent groups. The unit is base-pair (bp). The position information will be collected from the fourth column of bim files. The default is <code>NULL</code>, i.e., regrouping is not performed. </p>
+</dd>
+<dt><code>delete</code></dt><dd><p><code>TRUE</code> to delete temporary files containing the test statistics for each gene. The default is <code>TRUE</code>. </p>
+</dd>
+<dt><code>print</code></dt><dd><p><code>TRUE</code> to print information to the console. The default is <code>TRUE</code>. </p>
+</dd>
+<dt><code>tidy</code></dt><dd><p>the data frame <code>deleted.snps</code> in the returned object of <code><a href="../../ARTP2/help/sARTP.html">sARTP</a></code> containing information of SNPs excluded from the analysis and their reasons. Possible reason codes include <code>RM_BY_SNP_NAMES</code>, <code>RM_BY_REGIONS</code>, <code>NO_SUM_STAT</code>, <code>NO_RAW_GENO</code>, <code>NO_REF</code>, <code>SNP_MISS_RATE</code>, <code>SNP_LOW_MAF</code>, <code>SNP_CONST</code>, <code>SNP_HWE</code>, <code>GENE_R2</code>, <code>HUGE_GENE_R2</code>, <code>CHR_R2</code>, <code>HUGE_CHR</code>, <code>HUGE_CHR2</code>, <code>HUGE_CHR3</code>, <code>GENE_MISS_RATE</code>, <code>GENE_SUBSET</code>, <code>CONF_ALLELE_INFO</code>, <code>LACK_OF_ACCU_BETA</code>. Set <code>tidy</code> as <code>TRUE</code> to hide the SNPs with codes <code>NO_SUM_STAT</code> and <code>NO_REF</code>. The default is <code>TRUE</code>. </p>
+</dd>
+<dt><code>save.setup</code></dt><dd><p><code>TRUE</code> to save necessary data, e.g., working options, observed scores and covariance matrix, to local to repeat the analysis more quicly (skip loading and filtering data). It will be set to be <code>TRUE</code> if <code>only.setup</code> is <code>TRUE</code>. The default is <code>FALSE</code>. </p>
+</dd>
+<dt><code>path.setup</code></dt><dd><p>character string of file name to save the setup for <code><a href="../../ARTP2/help/warm.start.html">warm.start</a></code> if <code>save.setup</code> is <code>TRUE</code>. The default is <code>NULL</code> so that it is set as <code>paste(out.dir, "/setup.", id.str, ".rda", sep = "")</code>. </p>
+</dd>
+<dt><code>only.setup</code></dt><dd><p><code>TRUE</code> if only the setup is needed while the testing procedure is not. The R code to create the setup uses single thread but the testing procedure can be multi-threaded. The best practice to use <code>ARTP2</code> on a multi-threaded cluster is to firstly create the setup in single-thread mode, and then call the <code><a href="../../ARTP2/help/warm.start.html">warm.start</a></code> to compute the p-values in multiple-thread mode, which uses the saved setup at <code>path.setup</code> as input. <code>save.setup</code> will be set to be <code>TRUE</code> if <code>only.setup</code> is <code>TRUE</code>. The default is <code>FALSE</code>. </p>
+</dd>
+<dt><code>keep.geno</code></dt><dd><p><code>TRUE</code> if the reference genotypes of SNPs in pathway is returned. The default is <code>FALSE</code>. </p>
+</dd>
+<dt><code>excluded.snps</code></dt><dd><p>character vector of SNPs to be excluded in the analysis. <code>NULL</code> if no SNP is excluded. The default is <code>NULL</code>. </p>
+</dd>
+<dt><code>selected.snps</code></dt><dd><p>character vector of SNPs to be selected in the analysis. <code>NULL</code> if all SNPs are selected but other filters may be applied. The default is <code>NULL</code>. </p>
+</dd>
+<dt><code>excluded.regions</code></dt><dd><p>data frame with three columns <code>Chr</code>, <code>Start</code>, <code>End</code>, or three columns <code>Chr</code>, <code>Pos</code>, <code>Radius</code>. The unit is base-pair (bp). SNPs within <code>[Start, End]</code> or <code>[Pos - Radius, Pos + Radius]</code> will be excluded. See <code>Examples</code> in <code>sARTP</code>. This option is only available for <code>sARTP</code>. The default is <code>NULL</code>. </p>
+</dd>
+<dt><code>excluded.subs</code></dt><dd><p>character vector of subject IDs to be excluded in the analysis. These IDs must match with those in the second column (Individual ID) of the <code>fam</code> files in <code>reference</code>. The default is <code>NULL</code>. </p>
+</dd>
+<dt><code>selected.subs</code></dt><dd><p>character vector of subject IDs to be selected in the analysis. These IDs must match with those in the second column (Individual ID) of the <code>fam</code> files in <code>reference</code>. The default is <code>NULL</code>. </p>
+</dd>
+<dt><code>excluded.genes</code></dt><dd><p>character vector of genes to be excluded in the analysis. <code>NULL</code> if no gene is excluded. The default is <code>NULL</code>. </p>
+</dd>
+<dt><code>meta</code></dt><dd><p><code>TRUE</code> if return meta-analysis summary data from <code>sARTP</code>. The default is <code>FALSE</code>. </p>
+</dd>
+<dt><code>ambig.by.AF</code></dt><dd><p>TRUE or FALSE to align SNPs with ambiguous alleles by allele frequency (see details). The default is FALSE. </p>
+</dd>
+<dt><code>delete.gene.files</code></dt><dd><p>TRUE or FALSE to delete temporary gene files. This must be set to FALSE for a two population analysis. The default is TRUE. </p>
+</dd>
+</dl>
+
+<p><b>Options for handling huge pathways: </b>
+</p>
+
+<dl>
+<dt><code>trim.huge.chr</code></dt><dd><p>oversized chromosomes could be further trimmed to accelerate the testing procedure. If <code>TRUE</code> the additional options below are in effect. The default is <code>TRUE</code>. </p>
+</dd>
+<dt><code>huge.gene.size</code></dt><dd><p>a gene with number of SNPs larger than <code>huge.gene.size</code> will be further trimmed with <code>huge.gene.R2</code> if <code>trim.huge.chr</code> is <code>TRUE</code>. The default is 1000. </p>
+</dd>
+<dt><code>huge.chr.size</code></dt><dd><p>a chromosome with number of SNPs larger than <code>huge.chr.size</code> will be further trimmed with <code>huge.chr.R2</code> if <code>trim.huge.chr</code> is <code>TRUE</code>. The default is 2000. </p>
+</dd>
+<dt><code>huge.gene.R2</code></dt><dd><p>more stringent R^2 threshold to filter out SNPs in a gene. Similar to <code>gene.R2</code>. The default is <code>gene.R2</code> - 0.05. </p>
+</dd>
+<dt><code>huge.chr.R2</code></dt><dd><p>more stringent R^2 threshold to filter out SNPs in a chromosome. Similar to <code>chr.R2</code>. The default is <code>chr.R2</code> - 0.05. </p>
+</dd>
+</dl>
+
+<p><b>Options for gene-based test: </b> 
+</p>
+
+<dl>
+<dt><code>inspect.snp.n</code></dt><dd><p>the number of candidate truncation points to inspect the top SNPs in a gene. The default is 5. (See <code>Details</code>) </p>
+</dd>
+<dt><code>inspect.snp.percent</code></dt><dd><p>a value <code>x</code> between 0 and 1 such that a truncation point will be defined at every <code>x</code> percent of the top SNPs. The default is 0 so that the truncation points will be 1:<code>inspect.snp.n</code>. (See <code>Details</code>) </p>
+</dd>
+</dl>
+
+<p><b>Options for pathway-based test: </b> 
+</p>
+
+<dl>
+<dt><code>inspect.gene.n</code></dt><dd><p>the number of candidate truncation points to inspect the top genes in the pathway. The default is 10. </p>
+</dd>
+<dt><code>inspect.gene.percent</code></dt><dd><p>a value <code>x</code> between 0 and 1 such that a truncation point will be defined at every <code>x</code> percent of the top genes. If 0 then the truncation points will be 1:<code>inspect.gene.n</code>. The default is 0.05. </p>
+</dd>
+</dl>
+
+<p><b>Options for multiple populations: </b> 
+</p>
+
+<dl>
+<dt><code>merge.snp.method</code></dt><dd><p>One of &quot;MAX&quot;, &quot;META&quot;, &quot;FISHER&quot;, &quot;ACAT&quot; or &quot;WGTFISHER&quot;
+for the method
+to combine the permuted test statistics from each population.
+Currently, this is only used for <code>options.merged</code> 
+in function <code><a href="../../ARTP2/help/sARTP.multiPop.SNP.html">sARTP.multiPop.SNP</a></code>.
+The default is &quot;MAX&quot;.</p>
+</dd>
+<dt><code>scaleByTotSS</code></dt><dd><p>Should the score and covariance matrix for each 
+population be scaled by the total sample size? 
+The default is TRUE. </p>
+</dd>
+<dt><code>rem.dup.snps</code></dt><dd><p>TRUE or FALSE to remove SNPs that have the same chromsome and
+location, but different sets of alleles.
+The default is FALSE. </p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+ 
+<p><b>Order of removing SNPs, genes and subjects:</b> <br />
+1. Apply the options <code>excluded.snps</code> and <code>selected.snps</code> if non-NULL. Code: <code>RM_BY_SNP_NAMES</code>.<br />
+2. Apply the option <code>excluded.regions</code> if non-NULL and if <code>sARTP</code> is used. Code: <code>RM_BY_REGIONS</code>.<br />
+3. Remove SNPs without summary statistics in <code>summary.files</code>. Code: <code>NO_SUM_STAT</code>; or remove SNPs without raw genotype data in <code>data</code> or <code>geno.files</code>. Code: <code>NO_RAW_GENO</code>. <br />
+4. Remove SNPs not in <code>bim</code> files in <code>reference</code> if <code>sARTP</code> is used. Code: <code>NO_REF</code>. <br />
+5. Remove SNPs with conflictive allele information in summary and reference data if <code>sARTP</code> is used. Code: <code>CONF_ALLELE_INFO</code>. <br />
+6. Remove SNPs with missing RAF or EAF if <code>sARTP</code> and <code>options$ambig.by.AF</code> are used. Code: <code>NO_VALID_EAF_RAF</code>. <br />
+7. Remove SNPs with high missing rate. Code: <code>SNP_MISS_RATE</code>. <br />
+8. Remove SNPs with low MAF. Code: <code>SNP_LOW_MAF</code>. <br />
+9. Remove constant SNPs. Code: <code>SNP_CONST</code>. <br />
+10. Remove SNPs fail to pass HWE test. Code: <code>SNP_HWE</code>. <br />
+11. Remove highly correlated SNPs within each gene. Code: <code>GENE_R2</code> or <code>HUGE_GENE_R2</code>. <br />
+12. Remove highly correlated SNPs within each chromosome. Code: <code>CHR_R2</code>, <code>HUGE_CHR</code>, <code>HUGE_CHR2</code> or <code>HUGE_CHR3</code>. <br />
+13. Remove genes with high missing rate. Code: <code>GENE_MISS_RATE</code>. <br />
+14. Remove genes which are subsets of other genes. Code: <code>GENE_SUBSET</code>. <br />
+</p>
+<p><b>Example truncation points defined by <code>inspect.snp.n</code> and <code>inspect.snp.percent</code>: </b> 
+Assume the number of SNPs in a gene is 100. Below are examples of the truncation points for different values of <code>inspect.snp.n</code> and <code>inspect.snp.percent</code>. Similar values are applied to <code>inspect.gene.n</code> and <code>inspect.gene.percent</code>. 
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+inspect.snp.n </td><td style="text-align: right;"> inspect.snp.percent </td><td style="text-align: right;"> truncation points </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+1 </td><td style="text-align: right;"> 0 </td><td style="text-align: right;"> 1 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+1 </td><td style="text-align: right;"> 0.05 </td><td style="text-align: right;"> 5 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+1 </td><td style="text-align: right;"> 0.25 </td><td style="text-align: right;"> 25 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+1 </td><td style="text-align: right;"> 1 </td><td style="text-align: right;"> 100 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+2 </td><td style="text-align: right;"> 0 </td><td style="text-align: right;"> 1, 2 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+2 </td><td style="text-align: right;"> 0.05 </td><td style="text-align: right;"> 5, 10 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+2 </td><td style="text-align: right;"> 0.25 </td><td style="text-align: right;"> 25, 50 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+2 </td><td style="text-align: right;"> 1 </td><td style="text-align: right;"> 100 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+3 </td><td style="text-align: right;"> 0.2 </td><td style="text-align: right;"> 20, 40, 60 
+</td>
+</tr>
+
+</table>
+ 
+<p><b>SNPs with ambiguous alleles:</b> <br />
+A SNP with alleles A and T (or C and G) is ambiguous because the strand cannot be determined. Without
+strand information, it is sometimes better to match SNPs with ambiguous alleles by allele frequency
+instead of by matching the alleles. By default, this package matches all SNPs by alleles. If matching
+by allele frequency for the SNPs with ambiguous alleles is desired, then summary files must contain
+a variable called &quot;RAF&quot; (reference allele frequency) or a variable &quot;EAF&quot; (effect allele frequency). 
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="../../ARTP2/help/options.default.html">options.default</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>options &lt;- options.default()
+str(options)
+names(options)
+</code></pre>
+
+<hr /><div style="text-align: center;">[Package <em>ARTP2</em> version 1.2.32 <a href="00Index.html">Index</a>]</div>
+</div>
+</body></html>

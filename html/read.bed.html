@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><title>R: Reading data from binary PLINK files</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>read.bed {ARTP2}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='read.bed'>Reading data from binary PLINK files</h2>
+
+<h3>Description</h3>
+
+<p>Loads genotype data from PLINK format files .bed, .bim, and .fam.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>read.bed(bed, bim, fam, sel.snps = NULL, sel.subs = NULL, encode012 = TRUE)
+</code></pre>
+
+
+<h3>Arguments</h3>
+
+<table>
+<tr><td><code id="read.bed_:_bed">bed</code></td>
+<td>
+
+<p>the name of the bed file. 
+</p>
+</td></tr>
+<tr><td><code id="read.bed_:_bim">bim</code></td>
+<td>
+
+<p>the name of the bim file. For a SNP without a rs number, use any character (including any white space or '.') in the second column of the bim file. 
+</p>
+</td></tr>
+<tr><td><code id="read.bed_:_fam">fam</code></td>
+<td>
+
+<p>the name of the fam file. 
+</p>
+</td></tr>
+<tr><td><code id="read.bed_:_sel.snps">sel.snps</code></td>
+<td>
+
+<p>a character vector of SNPs to be extracted from the plink files. The default is <code>NULL</code>, i.e., all SNPs are extracted. SNPs could be named by its rs number (e.g. rs1234), or by <code>Chr:Pos</code> (e.g. 13:234567, or C13P234567) if a rs number is not available. All other naming methods for a SNP are not accepted in current version. 
+</p>
+</td></tr>
+<tr><td><code id="read.bed_:_sel.subs">sel.subs</code></td>
+<td>
+
+<p>an optional character vector specifying a subset of subject IDs to be extracted from the plink files. These IDs should be matched with the second column of <code>fam</code> files. The default is <code>NULL</code>, i.e., all subjects are extracted. 
+</p>
+</td></tr>
+<tr><td><code id="read.bed_:_encode012">encode012</code></td>
+<td>
+
+<p>logical. Encoding the genotypes using 0/1/2 if <code>TRUE</code>, or using symbols of the reference and effect alleles if <code>FALSE</code>. The default is <code>TRUE</code>, then 2 means two copies of effect allele (6th column of <code>bim</code> file). 
+</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>A data frame of genotypes of specified subjects in the plink files. For a SNP in <code>sel.snps</code> specified in the format <code>Chr:Pos</code>, e.g. 13:234567, it will be named to be C13P234567 in the returned data frame. 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+# Load the sample data
+
+bed &lt;- system.file("extdata", package = 'ARTP2', 'chr1.bed')
+bim &lt;- system.file("extdata", package = 'ARTP2', 'chr1.bim')
+fam &lt;- system.file("extdata", package = 'ARTP2', 'chr1.fam')
+
+## first five SNPs
+b &lt;- read.table(bim, header = FALSE, as.is = TRUE, nrows = 5)
+## first 50 subjects
+f &lt;- read.table(fam, header = FALSE, as.is = TRUE, nrows = 50)
+geno &lt;- read.bed(bed, bim, fam, sel.snps = b[, 2], sel.subs = f[, 2])
+
+dim(geno) # 50 x 5
+
+
+</code></pre>
+
+<hr /><div style="text-align: center;">[Package <em>ARTP2</em> version 1.2.32 <a href="00Index.html">Index</a>]</div>
+</div>
+</body></html>
