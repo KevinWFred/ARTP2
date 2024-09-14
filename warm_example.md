@@ -103,1244 +103,1244 @@ for(j in 1:npop){
 }
 ```
 
-    ## Loading definition of pathway: Sat Sep 14 00:28:03 2024
+    ## Loading definition of pathway: Sat Sep 14 01:02:47 2024
 
-    ## Loading summary statistics: Sat Sep 14 00:28:04 2024
+    ## Loading summary statistics: Sat Sep 14 01:02:47 2024
 
     ## Warning in load.summary.statistics(summary.files, pathway, options): Direction
     ## is not found in
     ## /gpfs/gsfs12/users/BB_Bioinformatics/Kevin/tools/Rpackages/ARTP2/extdata/study_AFR1.txt.gz.
     ## ARTP2 assumes equal sample size of SNPs in the study.
 
-    ## Loading allele information from PLINK files: Sat Sep 14 00:28:04 2024
+    ## Loading allele information from PLINK files: Sat Sep 14 01:02:47 2024
 
-    ## Removing SNPs with conflictive allele information: Sat Sep 14 00:28:04 2024
+    ## Removing SNPs with conflictive allele information: Sat Sep 14 01:02:47 2024
 
-    ## Loading genotypes from PLINK files: Sat Sep 14 00:28:04 2024
+    ## Loading genotypes from PLINK files: Sat Sep 14 01:02:47 2024
 
-    ## Realigning allele information of reference: Sat Sep 14 00:28:04 2024
+    ## Realigning allele information of reference: Sat Sep 14 01:02:47 2024
 
-    ## Removing SNPs with high missing rate: Sat Sep 14 00:28:04 2024
+    ## Removing SNPs with high missing rate: Sat Sep 14 01:02:48 2024
 
-    ## Removing SNPs with low MAFs: Sat Sep 14 00:28:05 2024
+    ## Removing SNPs with low MAFs: Sat Sep 14 01:02:48 2024
 
-    ## Removing constant SNPs: Sat Sep 14 00:28:05 2024
+    ## Removing constant SNPs: Sat Sep 14 01:02:48 2024
 
-    ## Removing high LD SNPs within genes: Sat Sep 14 00:28:05 2024
+    ## Removing high LD SNPs within genes: Sat Sep 14 01:02:48 2024
 
-    ## Removing SNPs in high LD within chromosomes: Sat Sep 14 00:28:13 2024
+    ## Removing SNPs in high LD within chromosomes: Sat Sep 14 01:02:56 2024
 
-    ## Removing high LD SNPs within genes of huge chromosome: Sat Sep 14 00:28:37 2024
+    ## Removing high LD SNPs within genes of huge chromosome: Sat Sep 14 01:03:20 2024
 
-    ## Removing SNPs in high LD within huge chromosomes: Sat Sep 14 00:28:42 2024
+    ## Removing SNPs in high LD within huge chromosomes: Sat Sep 14 01:03:25 2024
 
-    ## Removing genes which are subsets of other genes: Sat Sep 14 00:29:05 2024
+    ## Removing genes which are subsets of other genes: Sat Sep 14 01:03:46 2024
 
-    ## Calculating P and SE if not provided: Sat Sep 14 00:29:05 2024
+    ## Calculating P and SE if not provided: Sat Sep 14 01:03:47 2024
 
-    ## Removing SNPs close to marginal signals: Sat Sep 14 00:29:05 2024
+    ## Removing SNPs close to marginal signals: Sat Sep 14 01:03:47 2024
 
-    ## Recovering test statistics: Sat Sep 14 00:29:05 2024
+    ## Recovering test statistics: Sat Sep 14 01:03:47 2024
 
-    ## Setup completed: Sat Sep 14 00:29:06 2024
+    ## Setup completed: Sat Sep 14 01:03:48 2024
 
     ## ARTP2 supports multi-threading on this OS
 
-    ## Permuting group 1: Sat Sep 14 00:29:06 2024
+    ## Permuting group 1: Sat Sep 14 01:03:48 2024
 
-    ## Permuting group 2: Sat Sep 14 00:29:07 2024
+    ## Permuting group 2: Sat Sep 14 01:03:48 2024
 
-    ## Permuting group 3: Sat Sep 14 00:29:07 2024
+    ## Permuting group 3: Sat Sep 14 01:03:49 2024
 
-    ## Permuting group 4: Sat Sep 14 00:29:07 2024
+    ## Permuting group 4: Sat Sep 14 01:03:49 2024
 
-    ## Permuting group 5: Sat Sep 14 00:29:08 2024
+    ## Permuting group 5: Sat Sep 14 01:03:50 2024
 
-    ## Permuting group 6: Sat Sep 14 00:29:09 2024
+    ## Permuting group 6: Sat Sep 14 01:03:50 2024
 
-    ## Permuting group 7: Sat Sep 14 00:29:09 2024
+    ## Permuting group 7: Sat Sep 14 01:03:51 2024
 
-    ## Permuting group 8: Sat Sep 14 00:29:10 2024
+    ## Permuting group 8: Sat Sep 14 01:03:51 2024
 
-    ## Permuting group 9: Sat Sep 14 00:29:10 2024
+    ## Permuting group 9: Sat Sep 14 01:03:52 2024
 
-    ## Permuting group 10: Sat Sep 14 00:29:10 2024
+    ## Permuting group 10: Sat Sep 14 01:03:52 2024
 
-    ## Permuting group 11: Sat Sep 14 00:29:11 2024
+    ## Permuting group 11: Sat Sep 14 01:03:53 2024
 
-    ## Permuting group 12: Sat Sep 14 00:29:11 2024
+    ## Permuting group 12: Sat Sep 14 01:03:53 2024
 
-    ## Permuting group 13: Sat Sep 14 00:29:12 2024
+    ## Permuting group 13: Sat Sep 14 01:03:54 2024
 
-    ## Permuting group 14: Sat Sep 14 00:29:12 2024
+    ## Permuting group 14: Sat Sep 14 01:03:54 2024
 
-    ## Permuting group 15: Sat Sep 14 00:29:12 2024
+    ## Permuting group 15: Sat Sep 14 01:03:54 2024
 
-    ## Permuting group 16: Sat Sep 14 00:29:13 2024
+    ## Permuting group 16: Sat Sep 14 01:03:55 2024
 
-    ## Permuting group 17: Sat Sep 14 00:29:13 2024
+    ## Permuting group 17: Sat Sep 14 01:03:56 2024
 
-    ## Permuting group 18: Sat Sep 14 00:29:13 2024
+    ## Permuting group 18: Sat Sep 14 01:03:56 2024
 
-    ## Permuting group 19: Sat Sep 14 00:29:14 2024
+    ## Permuting group 19: Sat Sep 14 01:03:56 2024
 
-    ## Permuting group 20: Sat Sep 14 00:29:14 2024
+    ## Permuting group 20: Sat Sep 14 01:03:57 2024
 
-    ## Permuting group 21: Sat Sep 14 00:29:15 2024
+    ## Permuting group 21: Sat Sep 14 01:03:57 2024
 
-    ## Permuting group 22: Sat Sep 14 00:29:15 2024
+    ## Permuting group 22: Sat Sep 14 01:03:58 2024
 
-    ## Permuting group 23: Sat Sep 14 00:29:16 2024
+    ## Permuting group 23: Sat Sep 14 01:03:58 2024
 
-    ## Permuting group 24: Sat Sep 14 00:29:16 2024
+    ## Permuting group 24: Sat Sep 14 01:03:59 2024
 
-    ## Permuting group 25: Sat Sep 14 00:29:17 2024
+    ## Permuting group 25: Sat Sep 14 01:03:59 2024
 
-    ## Permuting group 26: Sat Sep 14 00:29:17 2024
+    ## Permuting group 26: Sat Sep 14 01:03:59 2024
 
-    ## Permuting group 27: Sat Sep 14 00:29:18 2024
+    ## Permuting group 27: Sat Sep 14 01:04:00 2024
 
-    ## Permuting group 28: Sat Sep 14 00:29:18 2024
+    ## Permuting group 28: Sat Sep 14 01:04:01 2024
 
-    ## Permuting group 29: Sat Sep 14 00:29:18 2024
+    ## Permuting group 29: Sat Sep 14 01:04:01 2024
 
-    ## Permuting group 30: Sat Sep 14 00:29:18 2024
+    ## Permuting group 30: Sat Sep 14 01:04:01 2024
 
-    ## Permuting group 31: Sat Sep 14 00:29:19 2024
+    ## Permuting group 31: Sat Sep 14 01:04:02 2024
 
-    ## Permuting group 32: Sat Sep 14 00:29:19 2024
+    ## Permuting group 32: Sat Sep 14 01:04:02 2024
 
-    ## Permuting group 33: Sat Sep 14 00:29:19 2024
+    ## Permuting group 33: Sat Sep 14 01:04:03 2024
 
-    ## Permuting group 34: Sat Sep 14 00:29:20 2024
+    ## Permuting group 34: Sat Sep 14 01:04:03 2024
 
-    ## Permuting group 35: Sat Sep 14 00:29:20 2024
+    ## Permuting group 35: Sat Sep 14 01:04:04 2024
 
-    ## Permuting group 36: Sat Sep 14 00:29:21 2024
+    ## Permuting group 36: Sat Sep 14 01:04:04 2024
 
-    ## Permuting group 37: Sat Sep 14 00:29:21 2024
+    ## Permuting group 37: Sat Sep 14 01:04:04 2024
 
-    ## Permuting group 38: Sat Sep 14 00:29:22 2024
+    ## Permuting group 38: Sat Sep 14 01:04:05 2024
 
-    ## Permuting group 39: Sat Sep 14 00:29:22 2024
+    ## Permuting group 39: Sat Sep 14 01:04:05 2024
 
-    ## Permuting group 40: Sat Sep 14 00:29:23 2024
+    ## Permuting group 40: Sat Sep 14 01:04:06 2024
 
-    ## Permuting group 41: Sat Sep 14 00:29:23 2024
+    ## Permuting group 41: Sat Sep 14 01:04:06 2024
 
-    ## Permuting group 42: Sat Sep 14 00:29:24 2024
+    ## Permuting group 42: Sat Sep 14 01:04:07 2024
 
-    ## Permuting group 43: Sat Sep 14 00:29:24 2024
+    ## Permuting group 43: Sat Sep 14 01:04:08 2024
 
-    ## Permuting group 44: Sat Sep 14 00:29:25 2024
+    ## Permuting group 44: Sat Sep 14 01:04:09 2024
 
-    ## Permuting group 45: Sat Sep 14 00:29:26 2024
+    ## Permuting group 45: Sat Sep 14 01:04:09 2024
 
-    ## Permuting group 46: Sat Sep 14 00:29:26 2024
+    ## Permuting group 46: Sat Sep 14 01:04:10 2024
 
-    ## Permuting group 47: Sat Sep 14 00:29:26 2024
+    ## Permuting group 47: Sat Sep 14 01:04:10 2024
 
-    ## Permuting group 48: Sat Sep 14 00:29:27 2024
+    ## Permuting group 48: Sat Sep 14 01:04:11 2024
 
-    ## Permuting group 49: Sat Sep 14 00:29:27 2024
+    ## Permuting group 49: Sat Sep 14 01:04:11 2024
 
-    ## Permuting group 50: Sat Sep 14 00:29:28 2024
+    ## Permuting group 50: Sat Sep 14 01:04:12 2024
 
-    ## Permuting group 51: Sat Sep 14 00:29:28 2024
+    ## Permuting group 51: Sat Sep 14 01:04:12 2024
 
-    ## Permuting group 52: Sat Sep 14 00:29:29 2024
+    ## Permuting group 52: Sat Sep 14 01:04:13 2024
 
-    ## Permuting group 53: Sat Sep 14 00:29:29 2024
+    ## Permuting group 53: Sat Sep 14 01:04:13 2024
 
-    ## Permuting group 54: Sat Sep 14 00:29:30 2024
+    ## Permuting group 54: Sat Sep 14 01:04:13 2024
 
-    ## Permuting group 55: Sat Sep 14 00:29:30 2024
+    ## Permuting group 55: Sat Sep 14 01:04:14 2024
 
-    ## Permuting group 56: Sat Sep 14 00:29:31 2024
+    ## Permuting group 56: Sat Sep 14 01:04:14 2024
 
-    ## Permuting group 57: Sat Sep 14 00:29:33 2024
+    ## Permuting group 57: Sat Sep 14 01:04:15 2024
 
-    ## Permuting group 58: Sat Sep 14 00:29:33 2024
+    ## Permuting group 58: Sat Sep 14 01:04:16 2024
 
-    ## Permuting group 59: Sat Sep 14 00:29:33 2024
+    ## Permuting group 59: Sat Sep 14 01:04:16 2024
 
-    ## Permuting group 60: Sat Sep 14 00:29:34 2024
+    ## Permuting group 60: Sat Sep 14 01:04:17 2024
 
-    ## Permuting group 61: Sat Sep 14 00:29:35 2024
+    ## Permuting group 61: Sat Sep 14 01:04:17 2024
 
-    ## Permuting group 62: Sat Sep 14 00:29:35 2024
+    ## Permuting group 62: Sat Sep 14 01:04:18 2024
 
-    ## Permuting group 63: Sat Sep 14 00:29:36 2024
+    ## Permuting group 63: Sat Sep 14 01:04:18 2024
 
-    ## Permuting group 64: Sat Sep 14 00:29:36 2024
+    ## Permuting group 64: Sat Sep 14 01:04:19 2024
 
-    ## Permuting group 65: Sat Sep 14 00:29:37 2024
+    ## Permuting group 65: Sat Sep 14 01:04:20 2024
 
-    ## Permuting group 66: Sat Sep 14 00:29:38 2024
+    ## Permuting group 66: Sat Sep 14 01:04:20 2024
 
-    ## Permuting group 67: Sat Sep 14 00:29:39 2024
+    ## Permuting group 67: Sat Sep 14 01:04:21 2024
 
-    ## Permuting group 68: Sat Sep 14 00:29:39 2024
+    ## Permuting group 68: Sat Sep 14 01:04:22 2024
 
-    ## Permuting group 69: Sat Sep 14 00:29:40 2024
+    ## Permuting group 69: Sat Sep 14 01:04:23 2024
 
-    ## Permuting group 70: Sat Sep 14 00:29:40 2024
+    ## Permuting group 70: Sat Sep 14 01:04:23 2024
 
-    ## Permuting group 71: Sat Sep 14 00:29:41 2024
+    ## Permuting group 71: Sat Sep 14 01:04:24 2024
 
-    ## Permuting group 72: Sat Sep 14 00:29:41 2024
+    ## Permuting group 72: Sat Sep 14 01:04:25 2024
 
-    ## Permuting group 73: Sat Sep 14 00:29:42 2024
+    ## Permuting group 73: Sat Sep 14 01:04:25 2024
 
-    ## Permuting group 74: Sat Sep 14 00:29:42 2024
+    ## Permuting group 74: Sat Sep 14 01:04:25 2024
 
-    ## Permuting group 75: Sat Sep 14 00:29:42 2024
+    ## Permuting group 75: Sat Sep 14 01:04:26 2024
 
-    ## Permuting group 76: Sat Sep 14 00:29:43 2024
+    ## Permuting group 76: Sat Sep 14 01:04:26 2024
 
-    ## Permuting group 77: Sat Sep 14 00:29:43 2024
+    ## Permuting group 77: Sat Sep 14 01:04:27 2024
 
-    ## Permuting group 78: Sat Sep 14 00:29:44 2024
+    ## Permuting group 78: Sat Sep 14 01:04:27 2024
 
-    ## Permuting group 79: Sat Sep 14 00:29:44 2024
+    ## Permuting group 79: Sat Sep 14 01:04:28 2024
 
-    ## Permuting group 80: Sat Sep 14 00:29:45 2024
+    ## Permuting group 80: Sat Sep 14 01:04:28 2024
 
-    ## Permuting group 81: Sat Sep 14 00:29:45 2024
+    ## Permuting group 81: Sat Sep 14 01:04:29 2024
 
-    ## Permuting group 82: Sat Sep 14 00:29:45 2024
+    ## Permuting group 82: Sat Sep 14 01:04:29 2024
 
-    ## Permuting group 83: Sat Sep 14 00:29:46 2024
+    ## Permuting group 83: Sat Sep 14 01:04:30 2024
 
-    ## Permuting group 84: Sat Sep 14 00:29:46 2024
+    ## Permuting group 84: Sat Sep 14 01:04:30 2024
 
-    ## Permuting group 85: Sat Sep 14 00:29:47 2024
+    ## Permuting group 85: Sat Sep 14 01:04:31 2024
 
-    ## Permuting group 86: Sat Sep 14 00:29:47 2024
+    ## Permuting group 86: Sat Sep 14 01:04:31 2024
 
-    ## Permuting group 87: Sat Sep 14 00:29:47 2024
+    ## Permuting group 87: Sat Sep 14 01:04:32 2024
 
-    ## Permuting group 88: Sat Sep 14 00:29:48 2024
+    ## Permuting group 88: Sat Sep 14 01:04:33 2024
 
-    ## Permuting group 89: Sat Sep 14 00:29:48 2024
+    ## Permuting group 89: Sat Sep 14 01:04:33 2024
 
-    ## Permuting group 90: Sat Sep 14 00:29:49 2024
+    ## Permuting group 90: Sat Sep 14 01:04:33 2024
 
-    ## Permuting group 91: Sat Sep 14 00:29:49 2024
+    ## Permuting group 91: Sat Sep 14 01:04:34 2024
 
-    ## Permuting group 92: Sat Sep 14 00:29:50 2024
+    ## Permuting group 92: Sat Sep 14 01:04:35 2024
 
-    ## Permuting group 93: Sat Sep 14 00:29:50 2024
+    ## Permuting group 93: Sat Sep 14 01:04:35 2024
 
-    ## Permuting group 94: Sat Sep 14 00:29:51 2024
+    ## Permuting group 94: Sat Sep 14 01:04:36 2024
 
-    ## Permuting group 95: Sat Sep 14 00:29:51 2024
+    ## Permuting group 95: Sat Sep 14 01:04:36 2024
 
-    ## Permuting group 96: Sat Sep 14 00:29:52 2024
+    ## Permuting group 96: Sat Sep 14 01:04:37 2024
 
-    ## Permuting group 97: Sat Sep 14 00:29:52 2024
+    ## Permuting group 97: Sat Sep 14 01:04:37 2024
 
-    ## Permuting group 98: Sat Sep 14 00:29:52 2024
+    ## Permuting group 98: Sat Sep 14 01:04:38 2024
 
-    ## Permuting group 99: Sat Sep 14 00:29:53 2024
+    ## Permuting group 99: Sat Sep 14 01:04:39 2024
 
-    ## Permuting group 100: Sat Sep 14 00:29:53 2024
+    ## Permuting group 100: Sat Sep 14 01:04:39 2024
 
-    ## Permutation completed: Sat Sep 14 00:29:54 2024
+    ## Permutation completed: Sat Sep 14 01:04:39 2024
 
-    ## Computing pathway p-value: Sat Sep 14 00:29:54 2024
+    ## Computing pathway p-value: Sat Sep 14 01:04:39 2024
 
     ## sARTP files for warm.gene with  AFR is done!
 
-    ## Loading definition of pathway: Sat Sep 14 00:29:54 2024
+    ## Loading definition of pathway: Sat Sep 14 01:04:39 2024
 
-    ## Loading summary statistics: Sat Sep 14 00:29:54 2024
+    ## Loading summary statistics: Sat Sep 14 01:04:40 2024
 
     ## Warning in load.summary.statistics(summary.files, pathway, options): Direction
     ## is not found in
     ## /gpfs/gsfs12/users/BB_Bioinformatics/Kevin/tools/Rpackages/ARTP2/extdata/study_AMR1.txt.gz.
     ## ARTP2 assumes equal sample size of SNPs in the study.
 
-    ## Loading allele information from PLINK files: Sat Sep 14 00:29:54 2024
+    ## Loading allele information from PLINK files: Sat Sep 14 01:04:40 2024
 
-    ## Removing SNPs with conflictive allele information: Sat Sep 14 00:29:54 2024
+    ## Removing SNPs with conflictive allele information: Sat Sep 14 01:04:40 2024
 
-    ## Loading genotypes from PLINK files: Sat Sep 14 00:29:54 2024
+    ## Loading genotypes from PLINK files: Sat Sep 14 01:04:40 2024
 
-    ## Realigning allele information of reference: Sat Sep 14 00:29:55 2024
+    ## Realigning allele information of reference: Sat Sep 14 01:04:40 2024
 
-    ## Removing SNPs with high missing rate: Sat Sep 14 00:29:55 2024
+    ## Removing SNPs with high missing rate: Sat Sep 14 01:04:40 2024
 
-    ## Removing SNPs with low MAFs: Sat Sep 14 00:29:55 2024
+    ## Removing SNPs with low MAFs: Sat Sep 14 01:04:40 2024
 
-    ## Removing constant SNPs: Sat Sep 14 00:29:55 2024
+    ## Removing constant SNPs: Sat Sep 14 01:04:41 2024
 
-    ## Removing high LD SNPs within genes: Sat Sep 14 00:29:55 2024
+    ## Removing high LD SNPs within genes: Sat Sep 14 01:04:41 2024
 
-    ## Removing SNPs in high LD within chromosomes: Sat Sep 14 00:30:03 2024
+    ## Removing SNPs in high LD within chromosomes: Sat Sep 14 01:04:48 2024
 
-    ## Removing high LD SNPs within genes of huge chromosome: Sat Sep 14 00:30:19 2024
+    ## Removing high LD SNPs within genes of huge chromosome: Sat Sep 14 01:05:04 2024
 
-    ## Removing SNPs in high LD within huge chromosomes: Sat Sep 14 00:30:25 2024
+    ## Removing SNPs in high LD within huge chromosomes: Sat Sep 14 01:05:09 2024
 
-    ## Removing genes which are subsets of other genes: Sat Sep 14 00:30:38 2024
+    ## Removing genes which are subsets of other genes: Sat Sep 14 01:05:22 2024
 
-    ## Calculating P and SE if not provided: Sat Sep 14 00:30:38 2024
+    ## Calculating P and SE if not provided: Sat Sep 14 01:05:22 2024
 
-    ## Removing SNPs close to marginal signals: Sat Sep 14 00:30:39 2024
+    ## Removing SNPs close to marginal signals: Sat Sep 14 01:05:22 2024
 
-    ## Recovering test statistics: Sat Sep 14 00:30:39 2024
+    ## Recovering test statistics: Sat Sep 14 01:05:22 2024
 
-    ## Setup completed: Sat Sep 14 00:30:39 2024
+    ## Setup completed: Sat Sep 14 01:05:23 2024
 
     ## ARTP2 supports multi-threading on this OS
 
-    ## Permuting group 1: Sat Sep 14 00:30:39 2024
+    ## Permuting group 1: Sat Sep 14 01:05:23 2024
 
-    ## Permuting group 2: Sat Sep 14 00:30:40 2024
+    ## Permuting group 2: Sat Sep 14 01:05:24 2024
 
-    ## Permuting group 3: Sat Sep 14 00:30:40 2024
+    ## Permuting group 3: Sat Sep 14 01:05:24 2024
 
-    ## Permuting group 4: Sat Sep 14 00:30:40 2024
+    ## Permuting group 4: Sat Sep 14 01:05:24 2024
 
-    ## Permuting group 5: Sat Sep 14 00:30:41 2024
+    ## Permuting group 5: Sat Sep 14 01:05:25 2024
 
-    ## Permuting group 6: Sat Sep 14 00:30:42 2024
+    ## Permuting group 6: Sat Sep 14 01:05:26 2024
 
-    ## Permuting group 7: Sat Sep 14 00:30:43 2024
+    ## Permuting group 7: Sat Sep 14 01:05:27 2024
 
-    ## Permuting group 8: Sat Sep 14 00:30:43 2024
+    ## Permuting group 8: Sat Sep 14 01:05:27 2024
 
-    ## Permuting group 9: Sat Sep 14 00:30:43 2024
+    ## Permuting group 9: Sat Sep 14 01:05:28 2024
 
-    ## Permuting group 10: Sat Sep 14 00:30:44 2024
+    ## Permuting group 10: Sat Sep 14 01:05:28 2024
 
-    ## Permuting group 11: Sat Sep 14 00:30:44 2024
+    ## Permuting group 11: Sat Sep 14 01:05:29 2024
 
-    ## Permuting group 12: Sat Sep 14 00:30:45 2024
+    ## Permuting group 12: Sat Sep 14 01:05:29 2024
 
-    ## Permuting group 13: Sat Sep 14 00:30:45 2024
+    ## Permuting group 13: Sat Sep 14 01:05:31 2024
 
-    ## Permuting group 14: Sat Sep 14 00:30:46 2024
+    ## Permuting group 14: Sat Sep 14 01:05:31 2024
 
-    ## Permuting group 15: Sat Sep 14 00:30:46 2024
+    ## Permuting group 15: Sat Sep 14 01:05:31 2024
 
-    ## Permuting group 16: Sat Sep 14 00:30:46 2024
+    ## Permuting group 16: Sat Sep 14 01:05:32 2024
 
-    ## Permuting group 17: Sat Sep 14 00:30:46 2024
+    ## Permuting group 17: Sat Sep 14 01:05:32 2024
 
-    ## Permuting group 18: Sat Sep 14 00:30:47 2024
+    ## Permuting group 18: Sat Sep 14 01:05:33 2024
 
-    ## Permuting group 19: Sat Sep 14 00:30:47 2024
+    ## Permuting group 19: Sat Sep 14 01:05:33 2024
 
-    ## Permuting group 20: Sat Sep 14 00:30:47 2024
+    ## Permuting group 20: Sat Sep 14 01:05:33 2024
 
-    ## Permuting group 21: Sat Sep 14 00:30:48 2024
+    ## Permuting group 21: Sat Sep 14 01:05:34 2024
 
-    ## Permuting group 22: Sat Sep 14 00:30:48 2024
+    ## Permuting group 22: Sat Sep 14 01:05:34 2024
 
-    ## Permuting group 23: Sat Sep 14 00:30:48 2024
+    ## Permuting group 23: Sat Sep 14 01:05:34 2024
 
-    ## Permuting group 24: Sat Sep 14 00:30:49 2024
+    ## Permuting group 24: Sat Sep 14 01:05:35 2024
 
-    ## Permuting group 25: Sat Sep 14 00:30:49 2024
+    ## Permuting group 25: Sat Sep 14 01:05:35 2024
 
-    ## Permuting group 26: Sat Sep 14 00:30:49 2024
+    ## Permuting group 26: Sat Sep 14 01:05:36 2024
 
-    ## Permuting group 27: Sat Sep 14 00:30:50 2024
+    ## Permuting group 27: Sat Sep 14 01:05:37 2024
 
-    ## Permuting group 28: Sat Sep 14 00:30:50 2024
+    ## Permuting group 28: Sat Sep 14 01:05:37 2024
 
-    ## Permuting group 29: Sat Sep 14 00:30:50 2024
+    ## Permuting group 29: Sat Sep 14 01:05:37 2024
 
-    ## Permuting group 30: Sat Sep 14 00:30:50 2024
+    ## Permuting group 30: Sat Sep 14 01:05:38 2024
 
-    ## Permuting group 31: Sat Sep 14 00:30:51 2024
+    ## Permuting group 31: Sat Sep 14 01:05:38 2024
 
-    ## Permuting group 32: Sat Sep 14 00:30:51 2024
+    ## Permuting group 32: Sat Sep 14 01:05:38 2024
 
-    ## Permuting group 33: Sat Sep 14 00:30:51 2024
+    ## Permuting group 33: Sat Sep 14 01:05:38 2024
 
-    ## Permuting group 34: Sat Sep 14 00:30:51 2024
+    ## Permuting group 34: Sat Sep 14 01:05:39 2024
 
-    ## Permuting group 35: Sat Sep 14 00:30:52 2024
+    ## Permuting group 35: Sat Sep 14 01:05:39 2024
 
-    ## Permuting group 36: Sat Sep 14 00:30:52 2024
+    ## Permuting group 36: Sat Sep 14 01:05:39 2024
 
-    ## Permuting group 37: Sat Sep 14 00:30:53 2024
+    ## Permuting group 37: Sat Sep 14 01:05:40 2024
 
-    ## Permuting group 38: Sat Sep 14 00:30:53 2024
+    ## Permuting group 38: Sat Sep 14 01:05:40 2024
 
-    ## Permuting group 39: Sat Sep 14 00:30:53 2024
+    ## Permuting group 39: Sat Sep 14 01:05:41 2024
 
-    ## Permuting group 40: Sat Sep 14 00:30:53 2024
+    ## Permuting group 40: Sat Sep 14 01:05:41 2024
 
-    ## Permuting group 41: Sat Sep 14 00:30:54 2024
+    ## Permuting group 41: Sat Sep 14 01:05:41 2024
 
-    ## Permuting group 42: Sat Sep 14 00:30:54 2024
+    ## Permuting group 42: Sat Sep 14 01:05:42 2024
 
-    ## Permuting group 43: Sat Sep 14 00:30:55 2024
+    ## Permuting group 43: Sat Sep 14 01:05:42 2024
 
-    ## Permuting group 44: Sat Sep 14 00:30:55 2024
+    ## Permuting group 44: Sat Sep 14 01:05:43 2024
 
-    ## Permuting group 45: Sat Sep 14 00:30:55 2024
+    ## Permuting group 45: Sat Sep 14 01:05:43 2024
 
-    ## Permuting group 46: Sat Sep 14 00:30:56 2024
+    ## Permuting group 46: Sat Sep 14 01:05:43 2024
 
-    ## Permuting group 47: Sat Sep 14 00:30:56 2024
+    ## Permuting group 47: Sat Sep 14 01:05:44 2024
 
-    ## Permuting group 48: Sat Sep 14 00:30:57 2024
+    ## Permuting group 48: Sat Sep 14 01:05:44 2024
 
-    ## Permuting group 49: Sat Sep 14 00:30:57 2024
+    ## Permuting group 49: Sat Sep 14 01:05:44 2024
 
-    ## Permuting group 50: Sat Sep 14 00:30:57 2024
+    ## Permuting group 50: Sat Sep 14 01:05:45 2024
 
-    ## Permuting group 51: Sat Sep 14 00:30:58 2024
+    ## Permuting group 51: Sat Sep 14 01:05:45 2024
 
-    ## Permuting group 52: Sat Sep 14 00:30:58 2024
+    ## Permuting group 52: Sat Sep 14 01:05:45 2024
 
-    ## Permuting group 53: Sat Sep 14 00:30:58 2024
+    ## Permuting group 53: Sat Sep 14 01:05:46 2024
 
-    ## Permuting group 54: Sat Sep 14 00:30:58 2024
+    ## Permuting group 54: Sat Sep 14 01:05:46 2024
 
-    ## Permuting group 55: Sat Sep 14 00:30:59 2024
+    ## Permuting group 55: Sat Sep 14 01:05:46 2024
 
-    ## Permuting group 56: Sat Sep 14 00:30:59 2024
+    ## Permuting group 56: Sat Sep 14 01:05:46 2024
 
-    ## Permuting group 57: Sat Sep 14 00:31:00 2024
+    ## Permuting group 57: Sat Sep 14 01:05:47 2024
 
-    ## Permuting group 58: Sat Sep 14 00:31:00 2024
+    ## Permuting group 58: Sat Sep 14 01:05:48 2024
 
-    ## Permuting group 59: Sat Sep 14 00:31:00 2024
+    ## Permuting group 59: Sat Sep 14 01:05:48 2024
 
-    ## Permuting group 60: Sat Sep 14 00:31:01 2024
+    ## Permuting group 60: Sat Sep 14 01:05:48 2024
 
-    ## Permuting group 61: Sat Sep 14 00:31:01 2024
+    ## Permuting group 61: Sat Sep 14 01:05:49 2024
 
-    ## Permuting group 62: Sat Sep 14 00:31:02 2024
+    ## Permuting group 62: Sat Sep 14 01:05:50 2024
 
-    ## Permuting group 63: Sat Sep 14 00:31:02 2024
+    ## Permuting group 63: Sat Sep 14 01:05:50 2024
 
-    ## Permuting group 64: Sat Sep 14 00:31:03 2024
+    ## Permuting group 64: Sat Sep 14 01:05:50 2024
 
-    ## Permuting group 65: Sat Sep 14 00:31:04 2024
+    ## Permuting group 65: Sat Sep 14 01:05:51 2024
 
-    ## Permuting group 66: Sat Sep 14 00:31:04 2024
+    ## Permuting group 66: Sat Sep 14 01:05:52 2024
 
-    ## Permuting group 67: Sat Sep 14 00:31:05 2024
+    ## Permuting group 67: Sat Sep 14 01:05:53 2024
 
-    ## Permuting group 68: Sat Sep 14 00:31:05 2024
+    ## Permuting group 68: Sat Sep 14 01:05:53 2024
 
-    ## Permuting group 69: Sat Sep 14 00:31:06 2024
+    ## Permuting group 69: Sat Sep 14 01:05:53 2024
 
-    ## Permuting group 70: Sat Sep 14 00:31:06 2024
+    ## Permuting group 70: Sat Sep 14 01:05:54 2024
 
-    ## Permuting group 71: Sat Sep 14 00:31:07 2024
+    ## Permuting group 71: Sat Sep 14 01:05:55 2024
 
-    ## Permuting group 72: Sat Sep 14 00:31:07 2024
+    ## Permuting group 72: Sat Sep 14 01:05:55 2024
 
-    ## Permuting group 73: Sat Sep 14 00:31:07 2024
+    ## Permuting group 73: Sat Sep 14 01:05:56 2024
 
-    ## Permuting group 74: Sat Sep 14 00:31:08 2024
+    ## Permuting group 74: Sat Sep 14 01:05:56 2024
 
-    ## Permuting group 75: Sat Sep 14 00:31:08 2024
+    ## Permuting group 75: Sat Sep 14 01:05:56 2024
 
-    ## Permuting group 76: Sat Sep 14 00:31:08 2024
+    ## Permuting group 76: Sat Sep 14 01:05:57 2024
 
-    ## Permuting group 77: Sat Sep 14 00:31:09 2024
+    ## Permuting group 77: Sat Sep 14 01:05:57 2024
 
-    ## Permuting group 78: Sat Sep 14 00:31:09 2024
+    ## Permuting group 78: Sat Sep 14 01:05:57 2024
 
-    ## Permuting group 79: Sat Sep 14 00:31:09 2024
+    ## Permuting group 79: Sat Sep 14 01:05:58 2024
 
-    ## Permuting group 80: Sat Sep 14 00:31:10 2024
+    ## Permuting group 80: Sat Sep 14 01:05:58 2024
 
-    ## Permuting group 81: Sat Sep 14 00:31:10 2024
+    ## Permuting group 81: Sat Sep 14 01:05:59 2024
 
-    ## Permuting group 82: Sat Sep 14 00:31:10 2024
+    ## Permuting group 82: Sat Sep 14 01:05:59 2024
 
-    ## Permuting group 83: Sat Sep 14 00:31:11 2024
+    ## Permuting group 83: Sat Sep 14 01:05:59 2024
 
-    ## Permuting group 84: Sat Sep 14 00:31:11 2024
+    ## Permuting group 84: Sat Sep 14 01:06:00 2024
 
-    ## Permuting group 85: Sat Sep 14 00:31:11 2024
+    ## Permuting group 85: Sat Sep 14 01:06:00 2024
 
-    ## Permuting group 86: Sat Sep 14 00:31:11 2024
+    ## Permuting group 86: Sat Sep 14 01:06:00 2024
 
-    ## Permuting group 87: Sat Sep 14 00:31:12 2024
+    ## Permuting group 87: Sat Sep 14 01:06:00 2024
 
-    ## Permuting group 88: Sat Sep 14 00:31:13 2024
+    ## Permuting group 88: Sat Sep 14 01:06:01 2024
 
-    ## Permuting group 89: Sat Sep 14 00:31:13 2024
+    ## Permuting group 89: Sat Sep 14 01:06:02 2024
 
-    ## Permuting group 90: Sat Sep 14 00:31:13 2024
+    ## Permuting group 90: Sat Sep 14 01:06:02 2024
 
-    ## Permuting group 91: Sat Sep 14 00:31:13 2024
+    ## Permuting group 91: Sat Sep 14 01:06:02 2024
 
-    ## Permuting group 92: Sat Sep 14 00:31:14 2024
+    ## Permuting group 92: Sat Sep 14 01:06:03 2024
 
-    ## Permuting group 93: Sat Sep 14 00:31:14 2024
+    ## Permuting group 93: Sat Sep 14 01:06:03 2024
 
-    ## Permuting group 94: Sat Sep 14 00:31:14 2024
+    ## Permuting group 94: Sat Sep 14 01:06:03 2024
 
-    ## Permuting group 95: Sat Sep 14 00:31:15 2024
+    ## Permuting group 95: Sat Sep 14 01:06:04 2024
 
-    ## Permuting group 96: Sat Sep 14 00:31:15 2024
+    ## Permuting group 96: Sat Sep 14 01:06:04 2024
 
-    ## Permuting group 97: Sat Sep 14 00:31:15 2024
+    ## Permuting group 97: Sat Sep 14 01:06:05 2024
 
-    ## Permuting group 98: Sat Sep 14 00:31:16 2024
+    ## Permuting group 98: Sat Sep 14 01:06:05 2024
 
-    ## Permuting group 99: Sat Sep 14 00:31:16 2024
+    ## Permuting group 99: Sat Sep 14 01:06:06 2024
 
-    ## Permuting group 100: Sat Sep 14 00:31:17 2024
+    ## Permuting group 100: Sat Sep 14 01:06:06 2024
 
-    ## Permutation completed: Sat Sep 14 00:31:17 2024
+    ## Permutation completed: Sat Sep 14 01:06:06 2024
 
-    ## Computing pathway p-value: Sat Sep 14 00:31:17 2024
+    ## Computing pathway p-value: Sat Sep 14 01:06:06 2024
 
     ## sARTP files for warm.gene with  AMR is done!
 
-    ## Loading definition of pathway: Sat Sep 14 00:31:17 2024
+    ## Loading definition of pathway: Sat Sep 14 01:06:07 2024
 
-    ## Loading summary statistics: Sat Sep 14 00:31:17 2024
+    ## Loading summary statistics: Sat Sep 14 01:06:07 2024
 
     ## Warning in load.summary.statistics(summary.files, pathway, options): Direction
     ## is not found in
     ## /gpfs/gsfs12/users/BB_Bioinformatics/Kevin/tools/Rpackages/ARTP2/extdata/study_EAS1.txt.gz.
     ## ARTP2 assumes equal sample size of SNPs in the study.
 
-    ## Loading allele information from PLINK files: Sat Sep 14 00:31:18 2024
+    ## Loading allele information from PLINK files: Sat Sep 14 01:06:07 2024
 
-    ## Removing SNPs with conflictive allele information: Sat Sep 14 00:31:18 2024
+    ## Removing SNPs with conflictive allele information: Sat Sep 14 01:06:07 2024
 
-    ## Loading genotypes from PLINK files: Sat Sep 14 00:31:18 2024
+    ## Loading genotypes from PLINK files: Sat Sep 14 01:06:07 2024
 
-    ## Realigning allele information of reference: Sat Sep 14 00:31:18 2024
+    ## Realigning allele information of reference: Sat Sep 14 01:06:07 2024
 
-    ## Removing SNPs with high missing rate: Sat Sep 14 00:31:18 2024
+    ## Removing SNPs with high missing rate: Sat Sep 14 01:06:07 2024
 
-    ## Removing SNPs with low MAFs: Sat Sep 14 00:31:18 2024
+    ## Removing SNPs with low MAFs: Sat Sep 14 01:06:07 2024
 
-    ## Removing constant SNPs: Sat Sep 14 00:31:18 2024
+    ## Removing constant SNPs: Sat Sep 14 01:06:08 2024
 
-    ## Removing high LD SNPs within genes: Sat Sep 14 00:31:18 2024
+    ## Removing high LD SNPs within genes: Sat Sep 14 01:06:08 2024
 
-    ## Removing SNPs in high LD within chromosomes: Sat Sep 14 00:31:27 2024
+    ## Removing SNPs in high LD within chromosomes: Sat Sep 14 01:06:16 2024
 
-    ## Removing genes which are subsets of other genes: Sat Sep 14 00:31:34 2024
+    ## Removing genes which are subsets of other genes: Sat Sep 14 01:06:23 2024
 
-    ## Calculating P and SE if not provided: Sat Sep 14 00:31:34 2024
+    ## Calculating P and SE if not provided: Sat Sep 14 01:06:23 2024
 
-    ## Removing SNPs close to marginal signals: Sat Sep 14 00:31:34 2024
+    ## Removing SNPs close to marginal signals: Sat Sep 14 01:06:23 2024
 
-    ## Recovering test statistics: Sat Sep 14 00:31:34 2024
+    ## Recovering test statistics: Sat Sep 14 01:06:23 2024
 
-    ## Setup completed: Sat Sep 14 00:31:34 2024
+    ## Setup completed: Sat Sep 14 01:06:24 2024
 
     ## ARTP2 supports multi-threading on this OS
 
-    ## Permuting group 1: Sat Sep 14 00:31:34 2024
+    ## Permuting group 1: Sat Sep 14 01:06:24 2024
 
-    ## Permuting group 2: Sat Sep 14 00:31:35 2024
+    ## Permuting group 2: Sat Sep 14 01:06:24 2024
 
-    ## Permuting group 3: Sat Sep 14 00:31:35 2024
+    ## Permuting group 3: Sat Sep 14 01:06:24 2024
 
-    ## Permuting group 4: Sat Sep 14 00:31:35 2024
+    ## Permuting group 4: Sat Sep 14 01:06:25 2024
 
-    ## Permuting group 5: Sat Sep 14 00:31:36 2024
+    ## Permuting group 5: Sat Sep 14 01:06:25 2024
 
-    ## Permuting group 6: Sat Sep 14 00:31:36 2024
+    ## Permuting group 6: Sat Sep 14 01:06:25 2024
 
-    ## Permuting group 7: Sat Sep 14 00:31:37 2024
+    ## Permuting group 7: Sat Sep 14 01:06:26 2024
 
-    ## Permuting group 8: Sat Sep 14 00:31:37 2024
+    ## Permuting group 8: Sat Sep 14 01:06:26 2024
 
-    ## Permuting group 9: Sat Sep 14 00:31:37 2024
+    ## Permuting group 9: Sat Sep 14 01:06:26 2024
 
-    ## Permuting group 10: Sat Sep 14 00:31:38 2024
+    ## Permuting group 10: Sat Sep 14 01:06:27 2024
 
-    ## Permuting group 11: Sat Sep 14 00:31:38 2024
+    ## Permuting group 11: Sat Sep 14 01:06:27 2024
 
-    ## Permuting group 12: Sat Sep 14 00:31:38 2024
+    ## Permuting group 12: Sat Sep 14 01:06:27 2024
 
-    ## Permuting group 13: Sat Sep 14 00:31:38 2024
+    ## Permuting group 13: Sat Sep 14 01:06:28 2024
 
-    ## Permuting group 14: Sat Sep 14 00:31:39 2024
+    ## Permuting group 14: Sat Sep 14 01:06:28 2024
 
-    ## Permuting group 15: Sat Sep 14 00:31:39 2024
+    ## Permuting group 15: Sat Sep 14 01:06:28 2024
 
-    ## Permuting group 16: Sat Sep 14 00:31:39 2024
+    ## Permuting group 16: Sat Sep 14 01:06:29 2024
 
-    ## Permuting group 17: Sat Sep 14 00:31:39 2024
+    ## Permuting group 17: Sat Sep 14 01:06:29 2024
 
-    ## Permuting group 18: Sat Sep 14 00:31:40 2024
+    ## Permuting group 18: Sat Sep 14 01:06:29 2024
 
-    ## Permuting group 19: Sat Sep 14 00:31:40 2024
+    ## Permuting group 19: Sat Sep 14 01:06:30 2024
 
-    ## Permuting group 20: Sat Sep 14 00:31:40 2024
+    ## Permuting group 20: Sat Sep 14 01:06:30 2024
 
-    ## Permuting group 21: Sat Sep 14 00:31:41 2024
+    ## Permuting group 21: Sat Sep 14 01:06:30 2024
 
-    ## Permuting group 22: Sat Sep 14 00:31:41 2024
+    ## Permuting group 22: Sat Sep 14 01:06:31 2024
 
-    ## Permuting group 23: Sat Sep 14 00:31:41 2024
+    ## Permuting group 23: Sat Sep 14 01:06:31 2024
 
-    ## Permuting group 24: Sat Sep 14 00:31:41 2024
+    ## Permuting group 24: Sat Sep 14 01:06:31 2024
 
-    ## Permuting group 25: Sat Sep 14 00:31:42 2024
+    ## Permuting group 25: Sat Sep 14 01:06:31 2024
 
-    ## Permuting group 26: Sat Sep 14 00:31:42 2024
+    ## Permuting group 26: Sat Sep 14 01:06:32 2024
 
-    ## Permuting group 27: Sat Sep 14 00:31:42 2024
+    ## Permuting group 27: Sat Sep 14 01:06:32 2024
 
-    ## Permuting group 28: Sat Sep 14 00:31:43 2024
+    ## Permuting group 28: Sat Sep 14 01:06:32 2024
 
-    ## Permuting group 29: Sat Sep 14 00:31:43 2024
+    ## Permuting group 29: Sat Sep 14 01:06:32 2024
 
-    ## Permuting group 30: Sat Sep 14 00:31:43 2024
+    ## Permuting group 30: Sat Sep 14 01:06:33 2024
 
-    ## Permuting group 31: Sat Sep 14 00:31:43 2024
+    ## Permuting group 31: Sat Sep 14 01:06:33 2024
 
-    ## Permuting group 32: Sat Sep 14 00:31:43 2024
+    ## Permuting group 32: Sat Sep 14 01:06:33 2024
 
-    ## Permuting group 33: Sat Sep 14 00:31:44 2024
+    ## Permuting group 33: Sat Sep 14 01:06:33 2024
 
-    ## Permuting group 34: Sat Sep 14 00:31:44 2024
+    ## Permuting group 34: Sat Sep 14 01:06:34 2024
 
-    ## Permuting group 35: Sat Sep 14 00:31:44 2024
+    ## Permuting group 35: Sat Sep 14 01:06:34 2024
 
-    ## Permuting group 36: Sat Sep 14 00:31:44 2024
+    ## Permuting group 36: Sat Sep 14 01:06:34 2024
 
-    ## Permuting group 37: Sat Sep 14 00:31:45 2024
+    ## Permuting group 37: Sat Sep 14 01:06:35 2024
 
-    ## Permuting group 38: Sat Sep 14 00:31:45 2024
+    ## Permuting group 38: Sat Sep 14 01:06:35 2024
 
-    ## Permuting group 39: Sat Sep 14 00:31:45 2024
+    ## Permuting group 39: Sat Sep 14 01:06:35 2024
 
-    ## Permuting group 40: Sat Sep 14 00:31:46 2024
+    ## Permuting group 40: Sat Sep 14 01:06:35 2024
 
-    ## Permuting group 41: Sat Sep 14 00:31:46 2024
+    ## Permuting group 41: Sat Sep 14 01:06:35 2024
 
-    ## Permuting group 42: Sat Sep 14 00:31:46 2024
+    ## Permuting group 42: Sat Sep 14 01:06:36 2024
 
-    ## Permuting group 43: Sat Sep 14 00:31:46 2024
+    ## Permuting group 43: Sat Sep 14 01:06:36 2024
 
-    ## Permuting group 44: Sat Sep 14 00:31:47 2024
+    ## Permuting group 44: Sat Sep 14 01:06:37 2024
 
-    ## Permuting group 45: Sat Sep 14 00:31:47 2024
+    ## Permuting group 45: Sat Sep 14 01:06:37 2024
 
-    ## Permuting group 46: Sat Sep 14 00:31:47 2024
+    ## Permuting group 46: Sat Sep 14 01:06:37 2024
 
-    ## Permuting group 47: Sat Sep 14 00:31:48 2024
+    ## Permuting group 47: Sat Sep 14 01:06:37 2024
 
-    ## Permuting group 48: Sat Sep 14 00:31:48 2024
+    ## Permuting group 48: Sat Sep 14 01:06:37 2024
 
-    ## Permuting group 49: Sat Sep 14 00:31:48 2024
+    ## Permuting group 49: Sat Sep 14 01:06:38 2024
 
-    ## Permuting group 50: Sat Sep 14 00:31:48 2024
+    ## Permuting group 50: Sat Sep 14 01:06:38 2024
 
-    ## Permuting group 51: Sat Sep 14 00:31:49 2024
+    ## Permuting group 51: Sat Sep 14 01:06:38 2024
 
-    ## Permuting group 52: Sat Sep 14 00:31:49 2024
+    ## Permuting group 52: Sat Sep 14 01:06:39 2024
 
-    ## Permuting group 53: Sat Sep 14 00:31:49 2024
+    ## Permuting group 53: Sat Sep 14 01:06:39 2024
 
-    ## Permuting group 54: Sat Sep 14 00:31:50 2024
+    ## Permuting group 54: Sat Sep 14 01:06:39 2024
 
-    ## Permuting group 55: Sat Sep 14 00:31:50 2024
+    ## Permuting group 55: Sat Sep 14 01:06:39 2024
 
-    ## Permuting group 56: Sat Sep 14 00:31:50 2024
+    ## Permuting group 56: Sat Sep 14 01:06:39 2024
 
-    ## Permuting group 57: Sat Sep 14 00:31:51 2024
+    ## Permuting group 57: Sat Sep 14 01:06:40 2024
 
-    ## Permuting group 58: Sat Sep 14 00:31:52 2024
+    ## Permuting group 58: Sat Sep 14 01:06:40 2024
 
-    ## Permuting group 59: Sat Sep 14 00:31:52 2024
+    ## Permuting group 59: Sat Sep 14 01:06:41 2024
 
-    ## Permuting group 60: Sat Sep 14 00:31:53 2024
+    ## Permuting group 60: Sat Sep 14 01:06:41 2024
 
-    ## Permuting group 61: Sat Sep 14 00:31:53 2024
+    ## Permuting group 61: Sat Sep 14 01:06:42 2024
 
-    ## Permuting group 62: Sat Sep 14 00:31:53 2024
+    ## Permuting group 62: Sat Sep 14 01:06:42 2024
 
-    ## Permuting group 63: Sat Sep 14 00:31:54 2024
+    ## Permuting group 63: Sat Sep 14 01:06:42 2024
 
-    ## Permuting group 64: Sat Sep 14 00:31:54 2024
+    ## Permuting group 64: Sat Sep 14 01:06:43 2024
 
-    ## Permuting group 65: Sat Sep 14 00:31:55 2024
+    ## Permuting group 65: Sat Sep 14 01:06:43 2024
 
-    ## Permuting group 66: Sat Sep 14 00:31:55 2024
+    ## Permuting group 66: Sat Sep 14 01:06:44 2024
 
-    ## Permuting group 67: Sat Sep 14 00:31:56 2024
+    ## Permuting group 67: Sat Sep 14 01:06:44 2024
 
-    ## Permuting group 68: Sat Sep 14 00:31:56 2024
+    ## Permuting group 68: Sat Sep 14 01:06:44 2024
 
-    ## Permuting group 69: Sat Sep 14 00:31:56 2024
+    ## Permuting group 69: Sat Sep 14 01:06:45 2024
 
-    ## Permuting group 70: Sat Sep 14 00:31:56 2024
+    ## Permuting group 70: Sat Sep 14 01:06:45 2024
 
-    ## Permuting group 71: Sat Sep 14 00:31:57 2024
+    ## Permuting group 71: Sat Sep 14 01:06:46 2024
 
-    ## Permuting group 72: Sat Sep 14 00:31:57 2024
+    ## Permuting group 72: Sat Sep 14 01:06:46 2024
 
-    ## Permuting group 73: Sat Sep 14 00:31:58 2024
+    ## Permuting group 73: Sat Sep 14 01:06:46 2024
 
-    ## Permuting group 74: Sat Sep 14 00:31:58 2024
+    ## Permuting group 74: Sat Sep 14 01:06:46 2024
 
-    ## Permuting group 75: Sat Sep 14 00:31:59 2024
+    ## Permuting group 75: Sat Sep 14 01:06:47 2024
 
-    ## Permuting group 76: Sat Sep 14 00:31:59 2024
+    ## Permuting group 76: Sat Sep 14 01:06:47 2024
 
-    ## Permuting group 77: Sat Sep 14 00:32:00 2024
+    ## Permuting group 77: Sat Sep 14 01:06:47 2024
 
-    ## Permuting group 78: Sat Sep 14 00:32:00 2024
+    ## Permuting group 78: Sat Sep 14 01:06:47 2024
 
-    ## Permuting group 79: Sat Sep 14 00:32:01 2024
+    ## Permuting group 79: Sat Sep 14 01:06:48 2024
 
-    ## Permuting group 80: Sat Sep 14 00:32:01 2024
+    ## Permuting group 80: Sat Sep 14 01:06:48 2024
 
-    ## Permuting group 81: Sat Sep 14 00:32:01 2024
+    ## Permuting group 81: Sat Sep 14 01:06:48 2024
 
-    ## Permuting group 82: Sat Sep 14 00:32:02 2024
+    ## Permuting group 82: Sat Sep 14 01:06:48 2024
 
-    ## Permuting group 83: Sat Sep 14 00:32:02 2024
+    ## Permuting group 83: Sat Sep 14 01:06:49 2024
 
-    ## Permuting group 84: Sat Sep 14 00:32:03 2024
+    ## Permuting group 84: Sat Sep 14 01:06:49 2024
 
-    ## Permuting group 85: Sat Sep 14 00:32:04 2024
+    ## Permuting group 85: Sat Sep 14 01:06:49 2024
 
-    ## Permuting group 86: Sat Sep 14 00:32:04 2024
+    ## Permuting group 86: Sat Sep 14 01:06:50 2024
 
-    ## Permuting group 87: Sat Sep 14 00:32:04 2024
+    ## Permuting group 87: Sat Sep 14 01:06:50 2024
 
-    ## Permuting group 88: Sat Sep 14 00:32:05 2024
+    ## Permuting group 88: Sat Sep 14 01:06:51 2024
 
-    ## Permuting group 89: Sat Sep 14 00:32:06 2024
+    ## Permuting group 89: Sat Sep 14 01:06:51 2024
 
-    ## Permuting group 90: Sat Sep 14 00:32:06 2024
+    ## Permuting group 90: Sat Sep 14 01:06:51 2024
 
-    ## Permuting group 91: Sat Sep 14 00:32:07 2024
+    ## Permuting group 91: Sat Sep 14 01:06:51 2024
 
-    ## Permuting group 92: Sat Sep 14 00:32:07 2024
+    ## Permuting group 92: Sat Sep 14 01:06:52 2024
 
-    ## Permuting group 93: Sat Sep 14 00:32:08 2024
+    ## Permuting group 93: Sat Sep 14 01:06:52 2024
 
-    ## Permuting group 94: Sat Sep 14 00:32:08 2024
+    ## Permuting group 94: Sat Sep 14 01:06:52 2024
 
-    ## Permuting group 95: Sat Sep 14 00:32:08 2024
+    ## Permuting group 95: Sat Sep 14 01:06:53 2024
 
-    ## Permuting group 96: Sat Sep 14 00:32:08 2024
+    ## Permuting group 96: Sat Sep 14 01:06:53 2024
 
-    ## Permuting group 97: Sat Sep 14 00:32:09 2024
+    ## Permuting group 97: Sat Sep 14 01:06:53 2024
 
-    ## Permuting group 98: Sat Sep 14 00:32:09 2024
+    ## Permuting group 98: Sat Sep 14 01:06:53 2024
 
-    ## Permuting group 99: Sat Sep 14 00:32:10 2024
+    ## Permuting group 99: Sat Sep 14 01:06:54 2024
 
-    ## Permuting group 100: Sat Sep 14 00:32:10 2024
+    ## Permuting group 100: Sat Sep 14 01:06:54 2024
 
-    ## Permutation completed: Sat Sep 14 00:32:11 2024
+    ## Permutation completed: Sat Sep 14 01:06:54 2024
 
-    ## Computing pathway p-value: Sat Sep 14 00:32:11 2024
+    ## Computing pathway p-value: Sat Sep 14 01:06:54 2024
 
     ## sARTP files for warm.gene with  EAS is done!
 
-    ## Loading definition of pathway: Sat Sep 14 00:32:11 2024
+    ## Loading definition of pathway: Sat Sep 14 01:06:54 2024
 
-    ## Loading summary statistics: Sat Sep 14 00:32:11 2024
+    ## Loading summary statistics: Sat Sep 14 01:06:55 2024
 
     ## Warning in load.summary.statistics(summary.files, pathway, options): Direction
     ## is not found in
     ## /gpfs/gsfs12/users/BB_Bioinformatics/Kevin/tools/Rpackages/ARTP2/extdata/study_EUR1.txt.gz.
     ## ARTP2 assumes equal sample size of SNPs in the study.
 
-    ## Loading allele information from PLINK files: Sat Sep 14 00:32:11 2024
+    ## Loading allele information from PLINK files: Sat Sep 14 01:06:55 2024
 
-    ## Removing SNPs with conflictive allele information: Sat Sep 14 00:32:11 2024
+    ## Removing SNPs with conflictive allele information: Sat Sep 14 01:06:55 2024
 
-    ## Loading genotypes from PLINK files: Sat Sep 14 00:32:11 2024
+    ## Loading genotypes from PLINK files: Sat Sep 14 01:06:55 2024
 
-    ## Realigning allele information of reference: Sat Sep 14 00:32:12 2024
+    ## Realigning allele information of reference: Sat Sep 14 01:06:55 2024
 
-    ## Removing SNPs with high missing rate: Sat Sep 14 00:32:12 2024
+    ## Removing SNPs with high missing rate: Sat Sep 14 01:06:55 2024
 
-    ## Removing SNPs with low MAFs: Sat Sep 14 00:32:12 2024
+    ## Removing SNPs with low MAFs: Sat Sep 14 01:06:55 2024
 
-    ## Removing constant SNPs: Sat Sep 14 00:32:12 2024
+    ## Removing constant SNPs: Sat Sep 14 01:06:55 2024
 
-    ## Removing high LD SNPs within genes: Sat Sep 14 00:32:12 2024
+    ## Removing high LD SNPs within genes: Sat Sep 14 01:06:56 2024
 
-    ## Removing SNPs in high LD within chromosomes: Sat Sep 14 00:32:20 2024
+    ## Removing SNPs in high LD within chromosomes: Sat Sep 14 01:07:04 2024
 
-    ## Removing high LD SNPs within genes of huge chromosome: Sat Sep 14 00:32:33 2024
+    ## Removing high LD SNPs within genes of huge chromosome: Sat Sep 14 01:07:17 2024
 
-    ## Removing SNPs in high LD within huge chromosomes: Sat Sep 14 00:32:38 2024
+    ## Removing SNPs in high LD within huge chromosomes: Sat Sep 14 01:07:21 2024
 
-    ## Removing genes which are subsets of other genes: Sat Sep 14 00:32:49 2024
+    ## Removing genes which are subsets of other genes: Sat Sep 14 01:07:33 2024
 
-    ## Calculating P and SE if not provided: Sat Sep 14 00:32:49 2024
+    ## Calculating P and SE if not provided: Sat Sep 14 01:07:33 2024
 
-    ## Removing SNPs close to marginal signals: Sat Sep 14 00:32:49 2024
+    ## Removing SNPs close to marginal signals: Sat Sep 14 01:07:33 2024
 
-    ## Recovering test statistics: Sat Sep 14 00:32:49 2024
+    ## Recovering test statistics: Sat Sep 14 01:07:33 2024
 
-    ## Setup completed: Sat Sep 14 00:32:50 2024
+    ## Setup completed: Sat Sep 14 01:07:33 2024
 
     ## ARTP2 supports multi-threading on this OS
 
-    ## Permuting group 1: Sat Sep 14 00:32:50 2024
+    ## Permuting group 1: Sat Sep 14 01:07:33 2024
 
-    ## Permuting group 2: Sat Sep 14 00:32:50 2024
+    ## Permuting group 2: Sat Sep 14 01:07:34 2024
 
-    ## Permuting group 3: Sat Sep 14 00:32:50 2024
+    ## Permuting group 3: Sat Sep 14 01:07:34 2024
 
-    ## Permuting group 4: Sat Sep 14 00:32:51 2024
+    ## Permuting group 4: Sat Sep 14 01:07:34 2024
 
-    ## Permuting group 5: Sat Sep 14 00:32:51 2024
+    ## Permuting group 5: Sat Sep 14 01:07:35 2024
 
-    ## Permuting group 6: Sat Sep 14 00:32:52 2024
+    ## Permuting group 6: Sat Sep 14 01:07:35 2024
 
-    ## Permuting group 7: Sat Sep 14 00:32:52 2024
+    ## Permuting group 7: Sat Sep 14 01:07:36 2024
 
-    ## Permuting group 8: Sat Sep 14 00:32:52 2024
+    ## Permuting group 8: Sat Sep 14 01:07:36 2024
 
-    ## Permuting group 9: Sat Sep 14 00:32:53 2024
+    ## Permuting group 9: Sat Sep 14 01:07:37 2024
 
-    ## Permuting group 10: Sat Sep 14 00:32:53 2024
+    ## Permuting group 10: Sat Sep 14 01:07:37 2024
 
-    ## Permuting group 11: Sat Sep 14 00:32:53 2024
+    ## Permuting group 11: Sat Sep 14 01:07:37 2024
 
-    ## Permuting group 12: Sat Sep 14 00:32:54 2024
+    ## Permuting group 12: Sat Sep 14 01:07:37 2024
 
-    ## Permuting group 13: Sat Sep 14 00:32:54 2024
+    ## Permuting group 13: Sat Sep 14 01:07:38 2024
 
-    ## Permuting group 14: Sat Sep 14 00:32:54 2024
+    ## Permuting group 14: Sat Sep 14 01:07:38 2024
 
-    ## Permuting group 15: Sat Sep 14 00:32:55 2024
+    ## Permuting group 15: Sat Sep 14 01:07:38 2024
 
-    ## Permuting group 16: Sat Sep 14 00:32:55 2024
+    ## Permuting group 16: Sat Sep 14 01:07:39 2024
 
-    ## Permuting group 17: Sat Sep 14 00:32:55 2024
+    ## Permuting group 17: Sat Sep 14 01:07:39 2024
 
-    ## Permuting group 18: Sat Sep 14 00:32:55 2024
+    ## Permuting group 18: Sat Sep 14 01:07:39 2024
 
-    ## Permuting group 19: Sat Sep 14 00:32:56 2024
+    ## Permuting group 19: Sat Sep 14 01:07:40 2024
 
-    ## Permuting group 20: Sat Sep 14 00:32:56 2024
+    ## Permuting group 20: Sat Sep 14 01:07:40 2024
 
-    ## Permuting group 21: Sat Sep 14 00:32:56 2024
+    ## Permuting group 21: Sat Sep 14 01:07:40 2024
 
-    ## Permuting group 22: Sat Sep 14 00:32:57 2024
+    ## Permuting group 22: Sat Sep 14 01:07:40 2024
 
-    ## Permuting group 23: Sat Sep 14 00:32:57 2024
+    ## Permuting group 23: Sat Sep 14 01:07:41 2024
 
-    ## Permuting group 24: Sat Sep 14 00:32:57 2024
+    ## Permuting group 24: Sat Sep 14 01:07:41 2024
 
-    ## Permuting group 25: Sat Sep 14 00:32:57 2024
+    ## Permuting group 25: Sat Sep 14 01:07:41 2024
 
-    ## Permuting group 26: Sat Sep 14 00:32:58 2024
+    ## Permuting group 26: Sat Sep 14 01:07:42 2024
 
-    ## Permuting group 27: Sat Sep 14 00:32:58 2024
+    ## Permuting group 27: Sat Sep 14 01:07:42 2024
 
-    ## Permuting group 28: Sat Sep 14 00:32:58 2024
+    ## Permuting group 28: Sat Sep 14 01:07:42 2024
 
-    ## Permuting group 29: Sat Sep 14 00:32:58 2024
+    ## Permuting group 29: Sat Sep 14 01:07:42 2024
 
-    ## Permuting group 30: Sat Sep 14 00:32:59 2024
+    ## Permuting group 30: Sat Sep 14 01:07:43 2024
 
-    ## Permuting group 31: Sat Sep 14 00:32:59 2024
+    ## Permuting group 31: Sat Sep 14 01:07:43 2024
 
-    ## Permuting group 32: Sat Sep 14 00:33:00 2024
+    ## Permuting group 32: Sat Sep 14 01:07:43 2024
 
-    ## Permuting group 33: Sat Sep 14 00:33:00 2024
+    ## Permuting group 33: Sat Sep 14 01:07:43 2024
 
-    ## Permuting group 34: Sat Sep 14 00:33:00 2024
+    ## Permuting group 34: Sat Sep 14 01:07:44 2024
 
-    ## Permuting group 35: Sat Sep 14 00:33:01 2024
+    ## Permuting group 35: Sat Sep 14 01:07:44 2024
 
-    ## Permuting group 36: Sat Sep 14 00:33:01 2024
+    ## Permuting group 36: Sat Sep 14 01:07:44 2024
 
-    ## Permuting group 37: Sat Sep 14 00:33:02 2024
+    ## Permuting group 37: Sat Sep 14 01:07:45 2024
 
-    ## Permuting group 38: Sat Sep 14 00:33:02 2024
+    ## Permuting group 38: Sat Sep 14 01:07:45 2024
 
-    ## Permuting group 39: Sat Sep 14 00:33:02 2024
+    ## Permuting group 39: Sat Sep 14 01:07:45 2024
 
-    ## Permuting group 40: Sat Sep 14 00:33:02 2024
+    ## Permuting group 40: Sat Sep 14 01:07:46 2024
 
-    ## Permuting group 41: Sat Sep 14 00:33:03 2024
+    ## Permuting group 41: Sat Sep 14 01:07:46 2024
 
-    ## Permuting group 42: Sat Sep 14 00:33:03 2024
+    ## Permuting group 42: Sat Sep 14 01:07:47 2024
 
-    ## Permuting group 43: Sat Sep 14 00:33:04 2024
+    ## Permuting group 43: Sat Sep 14 01:07:47 2024
 
-    ## Permuting group 44: Sat Sep 14 00:33:04 2024
+    ## Permuting group 44: Sat Sep 14 01:07:47 2024
 
-    ## Permuting group 45: Sat Sep 14 00:33:04 2024
+    ## Permuting group 45: Sat Sep 14 01:07:48 2024
 
-    ## Permuting group 46: Sat Sep 14 00:33:05 2024
+    ## Permuting group 46: Sat Sep 14 01:07:48 2024
 
-    ## Permuting group 47: Sat Sep 14 00:33:05 2024
+    ## Permuting group 47: Sat Sep 14 01:07:48 2024
 
-    ## Permuting group 48: Sat Sep 14 00:33:05 2024
+    ## Permuting group 48: Sat Sep 14 01:07:49 2024
 
-    ## Permuting group 49: Sat Sep 14 00:33:06 2024
+    ## Permuting group 49: Sat Sep 14 01:07:49 2024
 
-    ## Permuting group 50: Sat Sep 14 00:33:06 2024
+    ## Permuting group 50: Sat Sep 14 01:07:49 2024
 
-    ## Permuting group 51: Sat Sep 14 00:33:06 2024
+    ## Permuting group 51: Sat Sep 14 01:07:50 2024
 
-    ## Permuting group 52: Sat Sep 14 00:33:07 2024
+    ## Permuting group 52: Sat Sep 14 01:07:50 2024
 
-    ## Permuting group 53: Sat Sep 14 00:33:07 2024
+    ## Permuting group 53: Sat Sep 14 01:07:50 2024
 
-    ## Permuting group 54: Sat Sep 14 00:33:07 2024
+    ## Permuting group 54: Sat Sep 14 01:07:50 2024
 
-    ## Permuting group 55: Sat Sep 14 00:33:07 2024
+    ## Permuting group 55: Sat Sep 14 01:07:51 2024
 
-    ## Permuting group 56: Sat Sep 14 00:33:07 2024
+    ## Permuting group 56: Sat Sep 14 01:07:51 2024
 
-    ## Permuting group 57: Sat Sep 14 00:33:08 2024
+    ## Permuting group 57: Sat Sep 14 01:07:52 2024
 
-    ## Permuting group 58: Sat Sep 14 00:33:09 2024
+    ## Permuting group 58: Sat Sep 14 01:07:52 2024
 
-    ## Permuting group 59: Sat Sep 14 00:33:09 2024
+    ## Permuting group 59: Sat Sep 14 01:07:52 2024
 
-    ## Permuting group 60: Sat Sep 14 00:33:09 2024
+    ## Permuting group 60: Sat Sep 14 01:07:53 2024
 
-    ## Permuting group 61: Sat Sep 14 00:33:10 2024
+    ## Permuting group 61: Sat Sep 14 01:07:53 2024
 
-    ## Permuting group 62: Sat Sep 14 00:33:10 2024
+    ## Permuting group 62: Sat Sep 14 01:07:54 2024
 
-    ## Permuting group 63: Sat Sep 14 00:33:11 2024
+    ## Permuting group 63: Sat Sep 14 01:07:54 2024
 
-    ## Permuting group 64: Sat Sep 14 00:33:11 2024
+    ## Permuting group 64: Sat Sep 14 01:07:54 2024
 
-    ## Permuting group 65: Sat Sep 14 00:33:12 2024
+    ## Permuting group 65: Sat Sep 14 01:07:55 2024
 
-    ## Permuting group 66: Sat Sep 14 00:33:12 2024
+    ## Permuting group 66: Sat Sep 14 01:07:55 2024
 
-    ## Permuting group 67: Sat Sep 14 00:33:13 2024
+    ## Permuting group 67: Sat Sep 14 01:07:56 2024
 
-    ## Permuting group 68: Sat Sep 14 00:33:13 2024
+    ## Permuting group 68: Sat Sep 14 01:07:57 2024
 
-    ## Permuting group 69: Sat Sep 14 00:33:14 2024
+    ## Permuting group 69: Sat Sep 14 01:07:57 2024
 
-    ## Permuting group 70: Sat Sep 14 00:33:14 2024
+    ## Permuting group 70: Sat Sep 14 01:07:57 2024
 
-    ## Permuting group 71: Sat Sep 14 00:33:15 2024
+    ## Permuting group 71: Sat Sep 14 01:07:58 2024
 
-    ## Permuting group 72: Sat Sep 14 00:33:15 2024
+    ## Permuting group 72: Sat Sep 14 01:07:58 2024
 
-    ## Permuting group 73: Sat Sep 14 00:33:15 2024
+    ## Permuting group 73: Sat Sep 14 01:07:58 2024
 
-    ## Permuting group 74: Sat Sep 14 00:33:16 2024
+    ## Permuting group 74: Sat Sep 14 01:07:59 2024
 
-    ## Permuting group 75: Sat Sep 14 00:33:16 2024
+    ## Permuting group 75: Sat Sep 14 01:07:59 2024
 
-    ## Permuting group 76: Sat Sep 14 00:33:16 2024
+    ## Permuting group 76: Sat Sep 14 01:07:59 2024
 
-    ## Permuting group 77: Sat Sep 14 00:33:16 2024
+    ## Permuting group 77: Sat Sep 14 01:08:00 2024
 
-    ## Permuting group 78: Sat Sep 14 00:33:17 2024
+    ## Permuting group 78: Sat Sep 14 01:08:00 2024
 
-    ## Permuting group 79: Sat Sep 14 00:33:17 2024
+    ## Permuting group 79: Sat Sep 14 01:08:01 2024
 
-    ## Permuting group 80: Sat Sep 14 00:33:18 2024
+    ## Permuting group 80: Sat Sep 14 01:08:01 2024
 
-    ## Permuting group 81: Sat Sep 14 00:33:18 2024
+    ## Permuting group 81: Sat Sep 14 01:08:01 2024
 
-    ## Permuting group 82: Sat Sep 14 00:33:18 2024
+    ## Permuting group 82: Sat Sep 14 01:08:01 2024
 
-    ## Permuting group 83: Sat Sep 14 00:33:19 2024
+    ## Permuting group 83: Sat Sep 14 01:08:02 2024
 
-    ## Permuting group 84: Sat Sep 14 00:33:19 2024
+    ## Permuting group 84: Sat Sep 14 01:08:02 2024
 
-    ## Permuting group 85: Sat Sep 14 00:33:20 2024
+    ## Permuting group 85: Sat Sep 14 01:08:02 2024
 
-    ## Permuting group 86: Sat Sep 14 00:33:20 2024
+    ## Permuting group 86: Sat Sep 14 01:08:02 2024
 
-    ## Permuting group 87: Sat Sep 14 00:33:20 2024
+    ## Permuting group 87: Sat Sep 14 01:08:03 2024
 
-    ## Permuting group 88: Sat Sep 14 00:33:21 2024
+    ## Permuting group 88: Sat Sep 14 01:08:03 2024
 
-    ## Permuting group 89: Sat Sep 14 00:33:21 2024
+    ## Permuting group 89: Sat Sep 14 01:08:04 2024
 
-    ## Permuting group 90: Sat Sep 14 00:33:21 2024
+    ## Permuting group 90: Sat Sep 14 01:08:04 2024
 
-    ## Permuting group 91: Sat Sep 14 00:33:22 2024
+    ## Permuting group 91: Sat Sep 14 01:08:04 2024
 
-    ## Permuting group 92: Sat Sep 14 00:33:22 2024
+    ## Permuting group 92: Sat Sep 14 01:08:05 2024
 
-    ## Permuting group 93: Sat Sep 14 00:33:22 2024
+    ## Permuting group 93: Sat Sep 14 01:08:05 2024
 
-    ## Permuting group 94: Sat Sep 14 00:33:23 2024
+    ## Permuting group 94: Sat Sep 14 01:08:05 2024
 
-    ## Permuting group 95: Sat Sep 14 00:33:23 2024
+    ## Permuting group 95: Sat Sep 14 01:08:06 2024
 
-    ## Permuting group 96: Sat Sep 14 00:33:23 2024
+    ## Permuting group 96: Sat Sep 14 01:08:06 2024
 
-    ## Permuting group 97: Sat Sep 14 00:33:24 2024
+    ## Permuting group 97: Sat Sep 14 01:08:06 2024
 
-    ## Permuting group 98: Sat Sep 14 00:33:24 2024
+    ## Permuting group 98: Sat Sep 14 01:08:07 2024
 
-    ## Permuting group 99: Sat Sep 14 00:33:25 2024
+    ## Permuting group 99: Sat Sep 14 01:08:07 2024
 
-    ## Permuting group 100: Sat Sep 14 00:33:25 2024
+    ## Permuting group 100: Sat Sep 14 01:08:08 2024
 
-    ## Permutation completed: Sat Sep 14 00:33:25 2024
+    ## Permutation completed: Sat Sep 14 01:08:08 2024
 
-    ## Computing pathway p-value: Sat Sep 14 00:33:25 2024
+    ## Computing pathway p-value: Sat Sep 14 01:08:08 2024
 
     ## sARTP files for warm.gene with  EUR is done!
 
-    ## Loading definition of pathway: Sat Sep 14 00:33:25 2024
+    ## Loading definition of pathway: Sat Sep 14 01:08:08 2024
 
-    ## Loading summary statistics: Sat Sep 14 00:33:26 2024
+    ## Loading summary statistics: Sat Sep 14 01:08:08 2024
 
     ## Warning in load.summary.statistics(summary.files, pathway, options): Direction
     ## is not found in
     ## /gpfs/gsfs12/users/BB_Bioinformatics/Kevin/tools/Rpackages/ARTP2/extdata/study_SAS1.txt.gz.
     ## ARTP2 assumes equal sample size of SNPs in the study.
 
-    ## Loading allele information from PLINK files: Sat Sep 14 00:33:26 2024
+    ## Loading allele information from PLINK files: Sat Sep 14 01:08:09 2024
 
-    ## Removing SNPs with conflictive allele information: Sat Sep 14 00:33:26 2024
+    ## Removing SNPs with conflictive allele information: Sat Sep 14 01:08:09 2024
 
-    ## Loading genotypes from PLINK files: Sat Sep 14 00:33:26 2024
+    ## Loading genotypes from PLINK files: Sat Sep 14 01:08:09 2024
 
-    ## Realigning allele information of reference: Sat Sep 14 00:33:26 2024
+    ## Realigning allele information of reference: Sat Sep 14 01:08:09 2024
 
-    ## Removing SNPs with high missing rate: Sat Sep 14 00:33:26 2024
+    ## Removing SNPs with high missing rate: Sat Sep 14 01:08:09 2024
 
-    ## Removing SNPs with low MAFs: Sat Sep 14 00:33:26 2024
+    ## Removing SNPs with low MAFs: Sat Sep 14 01:08:09 2024
 
-    ## Removing constant SNPs: Sat Sep 14 00:33:26 2024
+    ## Removing constant SNPs: Sat Sep 14 01:08:09 2024
 
-    ## Removing high LD SNPs within genes: Sat Sep 14 00:33:27 2024
+    ## Removing high LD SNPs within genes: Sat Sep 14 01:08:09 2024
 
-    ## Removing SNPs in high LD within chromosomes: Sat Sep 14 00:33:36 2024
+    ## Removing SNPs in high LD within chromosomes: Sat Sep 14 01:08:18 2024
 
-    ## Removing high LD SNPs within genes of huge chromosome: Sat Sep 14 00:33:48 2024
+    ## Removing high LD SNPs within genes of huge chromosome: Sat Sep 14 01:08:30 2024
 
-    ## Removing SNPs in high LD within huge chromosomes: Sat Sep 14 00:33:53 2024
+    ## Removing SNPs in high LD within huge chromosomes: Sat Sep 14 01:08:36 2024
 
-    ## Removing genes which are subsets of other genes: Sat Sep 14 00:34:04 2024
+    ## Removing genes which are subsets of other genes: Sat Sep 14 01:08:46 2024
 
-    ## Calculating P and SE if not provided: Sat Sep 14 00:34:04 2024
+    ## Calculating P and SE if not provided: Sat Sep 14 01:08:46 2024
 
-    ## Removing SNPs close to marginal signals: Sat Sep 14 00:34:04 2024
+    ## Removing SNPs close to marginal signals: Sat Sep 14 01:08:46 2024
 
-    ## Recovering test statistics: Sat Sep 14 00:34:04 2024
+    ## Recovering test statistics: Sat Sep 14 01:08:46 2024
 
-    ## Setup completed: Sat Sep 14 00:34:04 2024
+    ## Setup completed: Sat Sep 14 01:08:47 2024
 
     ## ARTP2 supports multi-threading on this OS
 
-    ## Permuting group 1: Sat Sep 14 00:34:04 2024
+    ## Permuting group 1: Sat Sep 14 01:08:47 2024
 
-    ## Permuting group 2: Sat Sep 14 00:34:05 2024
+    ## Permuting group 2: Sat Sep 14 01:08:47 2024
 
-    ## Permuting group 3: Sat Sep 14 00:34:05 2024
+    ## Permuting group 3: Sat Sep 14 01:08:48 2024
 
-    ## Permuting group 4: Sat Sep 14 00:34:05 2024
+    ## Permuting group 4: Sat Sep 14 01:08:48 2024
 
-    ## Permuting group 5: Sat Sep 14 00:34:06 2024
+    ## Permuting group 5: Sat Sep 14 01:08:49 2024
 
-    ## Permuting group 6: Sat Sep 14 00:34:07 2024
+    ## Permuting group 6: Sat Sep 14 01:08:49 2024
 
-    ## Permuting group 7: Sat Sep 14 00:34:08 2024
+    ## Permuting group 7: Sat Sep 14 01:08:50 2024
 
-    ## Permuting group 8: Sat Sep 14 00:34:08 2024
+    ## Permuting group 8: Sat Sep 14 01:08:50 2024
 
-    ## Permuting group 9: Sat Sep 14 00:34:08 2024
+    ## Permuting group 9: Sat Sep 14 01:08:50 2024
 
-    ## Permuting group 10: Sat Sep 14 00:34:08 2024
+    ## Permuting group 10: Sat Sep 14 01:08:50 2024
 
-    ## Permuting group 11: Sat Sep 14 00:34:09 2024
+    ## Permuting group 11: Sat Sep 14 01:08:51 2024
 
-    ## Permuting group 12: Sat Sep 14 00:34:09 2024
+    ## Permuting group 12: Sat Sep 14 01:08:51 2024
 
-    ## Permuting group 13: Sat Sep 14 00:34:10 2024
+    ## Permuting group 13: Sat Sep 14 01:08:52 2024
 
-    ## Permuting group 14: Sat Sep 14 00:34:10 2024
+    ## Permuting group 14: Sat Sep 14 01:08:52 2024
 
-    ## Permuting group 15: Sat Sep 14 00:34:10 2024
+    ## Permuting group 15: Sat Sep 14 01:08:52 2024
 
-    ## Permuting group 16: Sat Sep 14 00:34:11 2024
+    ## Permuting group 16: Sat Sep 14 01:08:52 2024
 
-    ## Permuting group 17: Sat Sep 14 00:34:11 2024
+    ## Permuting group 17: Sat Sep 14 01:08:53 2024
 
-    ## Permuting group 18: Sat Sep 14 00:34:11 2024
+    ## Permuting group 18: Sat Sep 14 01:08:53 2024
 
-    ## Permuting group 19: Sat Sep 14 00:34:12 2024
+    ## Permuting group 19: Sat Sep 14 01:08:53 2024
 
-    ## Permuting group 20: Sat Sep 14 00:34:12 2024
+    ## Permuting group 20: Sat Sep 14 01:08:54 2024
 
-    ## Permuting group 21: Sat Sep 14 00:34:12 2024
+    ## Permuting group 21: Sat Sep 14 01:08:54 2024
 
-    ## Permuting group 22: Sat Sep 14 00:34:13 2024
+    ## Permuting group 22: Sat Sep 14 01:08:54 2024
 
-    ## Permuting group 23: Sat Sep 14 00:34:13 2024
+    ## Permuting group 23: Sat Sep 14 01:08:55 2024
 
-    ## Permuting group 24: Sat Sep 14 00:34:13 2024
+    ## Permuting group 24: Sat Sep 14 01:08:55 2024
 
-    ## Permuting group 25: Sat Sep 14 00:34:13 2024
+    ## Permuting group 25: Sat Sep 14 01:08:55 2024
 
-    ## Permuting group 26: Sat Sep 14 00:34:14 2024
+    ## Permuting group 26: Sat Sep 14 01:08:55 2024
 
-    ## Permuting group 27: Sat Sep 14 00:34:14 2024
+    ## Permuting group 27: Sat Sep 14 01:08:56 2024
 
-    ## Permuting group 28: Sat Sep 14 00:34:15 2024
+    ## Permuting group 28: Sat Sep 14 01:08:56 2024
 
-    ## Permuting group 29: Sat Sep 14 00:34:15 2024
+    ## Permuting group 29: Sat Sep 14 01:08:56 2024
 
-    ## Permuting group 30: Sat Sep 14 00:34:15 2024
+    ## Permuting group 30: Sat Sep 14 01:08:57 2024
 
-    ## Permuting group 31: Sat Sep 14 00:34:15 2024
+    ## Permuting group 31: Sat Sep 14 01:08:57 2024
 
-    ## Permuting group 32: Sat Sep 14 00:34:16 2024
+    ## Permuting group 32: Sat Sep 14 01:08:57 2024
 
-    ## Permuting group 33: Sat Sep 14 00:34:16 2024
+    ## Permuting group 33: Sat Sep 14 01:08:57 2024
 
-    ## Permuting group 34: Sat Sep 14 00:34:16 2024
+    ## Permuting group 34: Sat Sep 14 01:08:57 2024
 
-    ## Permuting group 35: Sat Sep 14 00:34:16 2024
+    ## Permuting group 35: Sat Sep 14 01:08:58 2024
 
-    ## Permuting group 36: Sat Sep 14 00:34:17 2024
+    ## Permuting group 36: Sat Sep 14 01:08:58 2024
 
-    ## Permuting group 37: Sat Sep 14 00:34:17 2024
+    ## Permuting group 37: Sat Sep 14 01:08:59 2024
 
-    ## Permuting group 38: Sat Sep 14 00:34:17 2024
+    ## Permuting group 38: Sat Sep 14 01:08:59 2024
 
-    ## Permuting group 39: Sat Sep 14 00:34:18 2024
+    ## Permuting group 39: Sat Sep 14 01:08:59 2024
 
-    ## Permuting group 40: Sat Sep 14 00:34:18 2024
+    ## Permuting group 40: Sat Sep 14 01:08:59 2024
 
-    ## Permuting group 41: Sat Sep 14 00:34:18 2024
+    ## Permuting group 41: Sat Sep 14 01:09:00 2024
 
-    ## Permuting group 42: Sat Sep 14 00:34:19 2024
+    ## Permuting group 42: Sat Sep 14 01:09:00 2024
 
-    ## Permuting group 43: Sat Sep 14 00:34:19 2024
+    ## Permuting group 43: Sat Sep 14 01:09:00 2024
 
-    ## Permuting group 44: Sat Sep 14 00:34:20 2024
+    ## Permuting group 44: Sat Sep 14 01:09:01 2024
 
-    ## Permuting group 45: Sat Sep 14 00:34:20 2024
+    ## Permuting group 45: Sat Sep 14 01:09:01 2024
 
-    ## Permuting group 46: Sat Sep 14 00:34:20 2024
+    ## Permuting group 46: Sat Sep 14 01:09:01 2024
 
-    ## Permuting group 47: Sat Sep 14 00:34:20 2024
+    ## Permuting group 47: Sat Sep 14 01:09:02 2024
 
-    ## Permuting group 48: Sat Sep 14 00:34:21 2024
+    ## Permuting group 48: Sat Sep 14 01:09:02 2024
 
-    ## Permuting group 49: Sat Sep 14 00:34:21 2024
+    ## Permuting group 49: Sat Sep 14 01:09:02 2024
 
-    ## Permuting group 50: Sat Sep 14 00:34:21 2024
+    ## Permuting group 50: Sat Sep 14 01:09:03 2024
 
-    ## Permuting group 51: Sat Sep 14 00:34:22 2024
+    ## Permuting group 51: Sat Sep 14 01:09:03 2024
 
-    ## Permuting group 52: Sat Sep 14 00:34:22 2024
+    ## Permuting group 52: Sat Sep 14 01:09:03 2024
 
-    ## Permuting group 53: Sat Sep 14 00:34:22 2024
+    ## Permuting group 53: Sat Sep 14 01:09:03 2024
 
-    ## Permuting group 54: Sat Sep 14 00:34:22 2024
+    ## Permuting group 54: Sat Sep 14 01:09:04 2024
 
-    ## Permuting group 55: Sat Sep 14 00:34:22 2024
+    ## Permuting group 55: Sat Sep 14 01:09:04 2024
 
-    ## Permuting group 56: Sat Sep 14 00:34:23 2024
+    ## Permuting group 56: Sat Sep 14 01:09:04 2024
 
-    ## Permuting group 57: Sat Sep 14 00:34:24 2024
+    ## Permuting group 57: Sat Sep 14 01:09:05 2024
 
-    ## Permuting group 58: Sat Sep 14 00:34:24 2024
+    ## Permuting group 58: Sat Sep 14 01:09:05 2024
 
-    ## Permuting group 59: Sat Sep 14 00:34:24 2024
+    ## Permuting group 59: Sat Sep 14 01:09:06 2024
 
-    ## Permuting group 60: Sat Sep 14 00:34:25 2024
+    ## Permuting group 60: Sat Sep 14 01:09:06 2024
 
-    ## Permuting group 61: Sat Sep 14 00:34:25 2024
+    ## Permuting group 61: Sat Sep 14 01:09:06 2024
 
-    ## Permuting group 62: Sat Sep 14 00:34:26 2024
+    ## Permuting group 62: Sat Sep 14 01:09:07 2024
 
-    ## Permuting group 63: Sat Sep 14 00:34:26 2024
+    ## Permuting group 63: Sat Sep 14 01:09:07 2024
 
-    ## Permuting group 64: Sat Sep 14 00:34:26 2024
+    ## Permuting group 64: Sat Sep 14 01:09:08 2024
 
-    ## Permuting group 65: Sat Sep 14 00:34:27 2024
+    ## Permuting group 65: Sat Sep 14 01:09:08 2024
 
-    ## Permuting group 66: Sat Sep 14 00:34:27 2024
+    ## Permuting group 66: Sat Sep 14 01:09:09 2024
 
-    ## Permuting group 67: Sat Sep 14 00:34:28 2024
+    ## Permuting group 67: Sat Sep 14 01:09:09 2024
 
-    ## Permuting group 68: Sat Sep 14 00:34:28 2024
+    ## Permuting group 68: Sat Sep 14 01:09:10 2024
 
-    ## Permuting group 69: Sat Sep 14 00:34:29 2024
+    ## Permuting group 69: Sat Sep 14 01:09:11 2024
 
-    ## Permuting group 70: Sat Sep 14 00:34:29 2024
+    ## Permuting group 70: Sat Sep 14 01:09:11 2024
 
-    ## Permuting group 71: Sat Sep 14 00:34:30 2024
+    ## Permuting group 71: Sat Sep 14 01:09:11 2024
 
-    ## Permuting group 72: Sat Sep 14 00:34:30 2024
+    ## Permuting group 72: Sat Sep 14 01:09:12 2024
 
-    ## Permuting group 73: Sat Sep 14 00:34:30 2024
+    ## Permuting group 73: Sat Sep 14 01:09:12 2024
 
-    ## Permuting group 74: Sat Sep 14 00:34:31 2024
+    ## Permuting group 74: Sat Sep 14 01:09:12 2024
 
-    ## Permuting group 75: Sat Sep 14 00:34:31 2024
+    ## Permuting group 75: Sat Sep 14 01:09:13 2024
 
-    ## Permuting group 76: Sat Sep 14 00:34:31 2024
+    ## Permuting group 76: Sat Sep 14 01:09:13 2024
 
-    ## Permuting group 77: Sat Sep 14 00:34:32 2024
+    ## Permuting group 77: Sat Sep 14 01:09:13 2024
 
-    ## Permuting group 78: Sat Sep 14 00:34:32 2024
+    ## Permuting group 78: Sat Sep 14 01:09:14 2024
 
-    ## Permuting group 79: Sat Sep 14 00:34:32 2024
+    ## Permuting group 79: Sat Sep 14 01:09:14 2024
 
-    ## Permuting group 80: Sat Sep 14 00:34:33 2024
+    ## Permuting group 80: Sat Sep 14 01:09:15 2024
 
-    ## Permuting group 81: Sat Sep 14 00:34:33 2024
+    ## Permuting group 81: Sat Sep 14 01:09:15 2024
 
-    ## Permuting group 82: Sat Sep 14 00:34:33 2024
+    ## Permuting group 82: Sat Sep 14 01:09:15 2024
 
-    ## Permuting group 83: Sat Sep 14 00:34:33 2024
+    ## Permuting group 83: Sat Sep 14 01:09:15 2024
 
-    ## Permuting group 84: Sat Sep 14 00:34:34 2024
+    ## Permuting group 84: Sat Sep 14 01:09:16 2024
 
-    ## Permuting group 85: Sat Sep 14 00:34:34 2024
+    ## Permuting group 85: Sat Sep 14 01:09:16 2024
 
-    ## Permuting group 86: Sat Sep 14 00:34:34 2024
+    ## Permuting group 86: Sat Sep 14 01:09:16 2024
 
-    ## Permuting group 87: Sat Sep 14 00:34:35 2024
+    ## Permuting group 87: Sat Sep 14 01:09:17 2024
 
-    ## Permuting group 88: Sat Sep 14 00:34:35 2024
+    ## Permuting group 88: Sat Sep 14 01:09:17 2024
 
-    ## Permuting group 89: Sat Sep 14 00:34:36 2024
+    ## Permuting group 89: Sat Sep 14 01:09:18 2024
 
-    ## Permuting group 90: Sat Sep 14 00:34:36 2024
+    ## Permuting group 90: Sat Sep 14 01:09:18 2024
 
-    ## Permuting group 91: Sat Sep 14 00:34:36 2024
+    ## Permuting group 91: Sat Sep 14 01:09:18 2024
 
-    ## Permuting group 92: Sat Sep 14 00:34:37 2024
+    ## Permuting group 92: Sat Sep 14 01:09:18 2024
 
-    ## Permuting group 93: Sat Sep 14 00:34:37 2024
+    ## Permuting group 93: Sat Sep 14 01:09:19 2024
 
-    ## Permuting group 94: Sat Sep 14 00:34:37 2024
+    ## Permuting group 94: Sat Sep 14 01:09:19 2024
 
-    ## Permuting group 95: Sat Sep 14 00:34:38 2024
+    ## Permuting group 95: Sat Sep 14 01:09:19 2024
 
-    ## Permuting group 96: Sat Sep 14 00:34:38 2024
+    ## Permuting group 96: Sat Sep 14 01:09:20 2024
 
-    ## Permuting group 97: Sat Sep 14 00:34:38 2024
+    ## Permuting group 97: Sat Sep 14 01:09:20 2024
 
-    ## Permuting group 98: Sat Sep 14 00:34:39 2024
+    ## Permuting group 98: Sat Sep 14 01:09:20 2024
 
-    ## Permuting group 99: Sat Sep 14 00:34:39 2024
+    ## Permuting group 99: Sat Sep 14 01:09:21 2024
 
-    ## Permuting group 100: Sat Sep 14 00:34:40 2024
+    ## Permuting group 100: Sat Sep 14 01:09:21 2024
 
-    ## Permutation completed: Sat Sep 14 00:34:40 2024
+    ## Permutation completed: Sat Sep 14 01:09:21 2024
 
-    ## Computing pathway p-value: Sat Sep 14 00:34:40 2024
+    ## Computing pathway p-value: Sat Sep 14 01:09:21 2024
 
     ## sARTP files for warm.gene with  SAS is done!
 
@@ -1349,35 +1349,35 @@ res.warm.FISHER<-warm.start.multiPop.gene(sARTP2.list=res_warm, method = "FISHER
                                           delete.gene.files=FALSE, expand.fold = 0, use.ranks.pathway=FALSE)
 ```
 
-    ## Computing pathway p-value: Sat Sep 14 00:34:40 2024
+    ## Computing pathway p-value: Sat Sep 14 01:09:22 2024
 
 ``` r
 res.warm.META<-warm.start.multiPop.gene(sARTP2.list=res_warm, method = "META", nthread=nthread,
                                         delete.gene.files=FALSE, expand.fold = 0, use.ranks.pathway=FALSE)
 ```
 
-    ## Computing pathway p-value: Sat Sep 14 00:34:41 2024
+    ## Computing pathway p-value: Sat Sep 14 01:09:23 2024
 
 ``` r
 res.warm.MAX<-warm.start.multiPop.gene(sARTP2.list=res_warm, method = "MAX", nthread=nthread,
                                        delete.gene.files=FALSE, expand.fold = 0, use.ranks.pathway=FALSE)
 ```
 
-    ## Computing pathway p-value: Sat Sep 14 00:34:42 2024
+    ## Computing pathway p-value: Sat Sep 14 01:09:24 2024
 
 ``` r
 res.warm.WGTFISHER<-warm.start.multiPop.gene(sARTP2.list=res_warm, method = "WGTFISHER", nthread=nthread,
                                              delete.gene.files=FALSE, expand.fold = 0, use.ranks.pathway=FALSE)
 ```
 
-    ## Computing pathway p-value: Sat Sep 14 00:34:43 2024
+    ## Computing pathway p-value: Sat Sep 14 01:09:24 2024
 
 ``` r
 res.warm.ACAT<-warm.start.multiPop.gene(sARTP2.list=res_warm, method = "ACAT", nthread=nthread,
                                         delete.gene.files=TRUE, expand.fold = 0, use.ranks.pathway=FALSE)
 ```
 
-    ## Computing pathway p-value: Sat Sep 14 00:34:57 2024
+    ## Computing pathway p-value: Sat Sep 14 01:09:38 2024
 
 ``` r
 ########### please update the output
