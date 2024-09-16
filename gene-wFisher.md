@@ -103,6 +103,8 @@ for(j in 1:npop){
 ```
 
 ``` r
+res.warm.WGTFISHER<-warm.start.multiPop.gene(sARTP2.list=res_warm, method = "WGTFISHER", nthread=nthread, delete.gene.files=FALSE, expand.fold = 0, use.ranks.pathway=FALSE)
+
 res.warm.WGTFISHER$pathway.pvalue
 ```
 
