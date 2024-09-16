@@ -26,7 +26,7 @@ print(nthread)
 
 ``` r
 
-library("ARTP2")
+library("ARTP3")
 
 #data from the following ancestres 
 text = c("AFR","AMR","EAS","EUR","SAS")
